@@ -119,6 +119,39 @@ MonoBehaviour:
   MaxValue: 0
   TopBar: {fileID: 2760950241728355136}
   BottomBar: {fileID: 8417290863702167793}
+--- !u!1 &1173691530194374350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4454816997368375158}
+  m_Layer: 6
+  m_Name: Fire Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4454816997368375158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173691530194374350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8942852810494712455}
+  - {fileID: 5943892055223720800}
+  m_Father: {fileID: 886223524584125421}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2790358795048757838
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,8 +265,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8711548772652426593}
-  - {fileID: 5943892055223720800}
-  - {fileID: 8942852810494712455}
+  - {fileID: 4454816997368375158}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1761678915954958834
@@ -398,9 +430,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3eeaa2a4aa9d434a8bc096a8a054590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
+  Health: 100
   moveSpeed: 3
-  MaxHealth: 9
+  MaxHealth: 100
   MaxSpeed: 5
   healthBar: {fileID: 9097223052666638956}
 --- !u!114 &474421562786812353
@@ -415,11 +447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d5f77459fddc4bac2b498fd34c55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
-  moveSpeed: 5
-  MaxHealth: 9
-  MaxSpeed: 5
-  healthBar: {fileID: 9097223052666638956}
 --- !u!114 &8035900691980809089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,9 +460,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3178876828656210005, guid: 0edf961ef1707534eada665d975a4d0a, type: 3}
-  firePoint:
-  - {fileID: 5943892055223720800}
+  FirePoints:
   - {fileID: 8942852810494712455}
+  - {fileID: 5943892055223720800}
   fireRate: 0.3
   fireSource: {fileID: 3003892909176028715}
   fireSounds: []
@@ -635,12 +662,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6594545062870580264}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.23, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 886223524584125421}
+  m_Father: {fileID: 4454816997368375158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8765481144406820872
 GameObject:
@@ -666,12 +693,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8765481144406820872}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.23, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 886223524584125421}
+  m_Father: {fileID: 4454816997368375158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9220642065165321099
 GameObject:

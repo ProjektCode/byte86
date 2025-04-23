@@ -28,7 +28,7 @@ public class PlayerStats : Entity {
         // Add enemy-specific reactions like flashing red or playing a sound
     }
 
-    protected override void Die() {
+    public override void Die() {
         base.Die();
     }
 

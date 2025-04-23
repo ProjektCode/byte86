@@ -4,7 +4,7 @@ using UnityEngine;
 public class ShootingPoint : MonoBehaviour {
 
     public GameObject bulletPrefab;
-    public Transform[] firePoint;
+    public Transform[] FirePoints;
     public float fireRate = 0.3f;
 
     public AudioSource fireSource;
@@ -38,7 +38,7 @@ public class ShootingPoint : MonoBehaviour {
 
     IEnumerator ShootWithDelay(){
 
-        foreach(Transform point in firePoint){
+        foreach(Transform point in FirePoints){
             Instantiate(bulletPrefab, point.position, Quaternion.identity);
                     //Play shoot sound
             if(fireSource != null && fireSounds.Length > 0){

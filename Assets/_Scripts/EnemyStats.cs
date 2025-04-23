@@ -3,18 +3,17 @@ using UnityEngine;
 public class EnemyStats : Entity {
     // Now has access to health, speed, TakeDamage, Die, etc.
 
+    [Header("Enemy Stats")]
     public int MinHealth = 3;
-    public int MaxHealth = 9;
 
     public float MinSpeed = 1.5f;
-    public float MaxSpeed = 5;
 
     public Bar healthBar;
 
     protected override void Awake() {
         // Optional: Randomize stats
-        Health = Random.Range(MinHealth, MaxHealth);
-        moveSpeed = Random.Range(MinSpeed, MaxSpeed);
+        Health = Random.Range(MinHealth, Health);
+        moveSpeed = Random.Range(MinSpeed, moveSpeed);
         currentHealth = Health;
         healthBar.MaxValue = currentHealth;
 
@@ -34,7 +33,7 @@ public class EnemyStats : Entity {
         // Add enemy-specific reactions like flashing red or playing a sound
     }
 
-    protected override void Die() {
+    public override void Die() {
 
         base.Die();
         

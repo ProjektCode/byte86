@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public abstract class Entity : MonoBehaviour {
     [Header("Stats")]
-    public int Health = 10;
+     public int Health = 10;
     public float moveSpeed = 3f;
     protected int currentHealth;
 
@@ -32,7 +32,7 @@ public abstract class Entity : MonoBehaviour {
         // Play VFX, sound, flash sprite, etc.
     }
 
-    protected virtual void Die() {
+    public virtual void Die() {
         animator.SetBool("isDead", true);
         
     }
