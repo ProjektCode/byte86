@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 1a8443469614242499dee2588c6305da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5978884845829136846
+    second: Parallax Nebulae 01_0
+  - first:
+      213: 6157351016289135143
+    second: Parallax Nebulae 01_1
+  - first:
+      213: 4201691379531956751
+    second: Parallax Nebulae 01_2
+  - first:
+      213: 397363935971999515
+    second: Parallax Nebulae 01_3
+  - first:
+      213: -2878184410150702338
+    second: Parallax Nebulae 01_4
+  - first:
+      213: -1588795199901883537
+    second: Parallax Nebulae 01_5
+  - first:
+      213: -2975541916703254421
+    second: Parallax Nebulae 01_6
+  - first:
+      213: 8759455724495127830
+    second: Parallax Nebulae 01_7
+  - first:
+      213: 6667276902031610880
+    second: Parallax Nebulae 01_8
+  - first:
+      213: -6260449682405128305
+    second: Parallax Nebulae 01_9
+  - first:
+      213: -8139704621653985368
+    second: Parallax Nebulae 01_10
+  - first:
+      213: 588883289422957894
+    second: Parallax Nebulae 01_11
+  - first:
+      213: -8128370548631932467
+    second: Parallax Nebulae 01_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1593
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e536309ebb60da0800000000000000
+      internalID: -5978884845829136846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_1
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1503
+        width: 402
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72aed43502e437550800000000000000
+      internalID: 6157351016289135143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_2
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1594
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02c2d45c086f4a30800000000000000
+      internalID: 4201691379531956751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1067
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f792af468b38500800000000000000
+      internalID: 397363935971999515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 706
+        width: 265
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef276ea3782ae08d0800000000000000
+      internalID: -2878184410150702338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 731
+        width: 437
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63a009fe2773f9e0800000000000000
+      internalID: -1588795199901883537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b681e905460c4b6d0800000000000000
+      internalID: -2975541916703254421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_7
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 110
+        width: 236
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6154b446296df8970800000000000000
+      internalID: 8759455724495127830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_8
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 187
+        width: 374
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004d2c4840de68c50800000000000000
+      internalID: 6667276902031610880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 147
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f870902ee2a6e19a0800000000000000
+      internalID: -6260449682405128305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 96
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a775b9c5c5f90f80800000000000000
+      internalID: -8139704621653985368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_11
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 0
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d08305b322c2800800000000000000
+      internalID: 588883289422957894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Nebulae 01_12
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 31
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1fb0e4d0a323f80800000000000000
+      internalID: -8128370548631932467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Parallax Nebulae 01_0: -5978884845829136846
+      Parallax Nebulae 01_1: 6157351016289135143
+      Parallax Nebulae 01_10: -8139704621653985368
+      Parallax Nebulae 01_11: 588883289422957894
+      Parallax Nebulae 01_12: -8128370548631932467
+      Parallax Nebulae 01_2: 4201691379531956751
+      Parallax Nebulae 01_3: 397363935971999515
+      Parallax Nebulae 01_4: -2878184410150702338
+      Parallax Nebulae 01_5: -1588795199901883537
+      Parallax Nebulae 01_6: -2975541916703254421
+      Parallax Nebulae 01_7: 8759455724495127830
+      Parallax Nebulae 01_8: 6667276902031610880
+      Parallax Nebulae 01_9: -6260449682405128305
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 151584bf71bc9e64eab32feb36c3857f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -744950078431327198
+    second: Parallax Stars 03_0
+  - first:
+      213: -448101102185393726
+    second: Parallax Stars 03_1
+  - first:
+      213: 4411448075077744821
+    second: Parallax Stars 03_2
+  - first:
+      213: -1583459902667735709
+    second: Parallax Stars 03_3
+  - first:
+      213: -3544402016685318079
+    second: Parallax Stars 03_4
+  - first:
+      213: 5770629433616969671
+    second: Parallax Stars 03_5
+  - first:
+      213: 4875311554667626928
+    second: Parallax Stars 03_6
+  - first:
+      213: 3681755173757328115
+    second: Parallax Stars 03_7
+  - first:
+      213: -1088125048172799867
+    second: Parallax Stars 03_8
+  - first:
+      213: -7749963875589997932
+    second: Parallax Stars 03_9
+  - first:
+      213: -1565220010112162057
+    second: Parallax Stars 03_10
+  - first:
+      213: 6910381672605106361
+    second: Parallax Stars 03_11
+  - first:
+      213: -191369671027752888
+    second: Parallax Stars 03_12
+  - first:
+      213: -442743192538307297
+    second: Parallax Stars 03_13
+  - first:
+      213: -8496199578255499576
+    second: Parallax Stars 03_14
+  - first:
+      213: -3697250804471471444
+    second: Parallax Stars 03_15
+  - first:
+      213: -7162265394093915407
+    second: Parallax Stars 03_16
+  - first:
+      213: 7864991828115474104
+    second: Parallax Stars 03_17
+  - first:
+      213: -6427444227480718186
+    second: Parallax Stars 03_18
+  - first:
+      213: 4847958180799826067
+    second: Parallax Stars 03_19
+  - first:
+      213: 7469894449912811745
+    second: Parallax Stars 03_20
+  - first:
+      213: 3150932934974503109
+    second: Parallax Stars 03_21
+  - first:
+      213: 457878588089697186
+    second: Parallax Stars 03_22
+  - first:
+      213: -6110901192722242282
+    second: Parallax Stars 03_23
+  - first:
+      213: 8124159372094851437
+    second: Parallax Stars 03_24
+  - first:
+      213: 2323518658233024635
+    second: Parallax Stars 03_25
+  - first:
+      213: 6097157183384263814
+    second: Parallax Stars 03_26
+  - first:
+      213: -6512377488432229690
+    second: Parallax Stars 03_27
+  - first:
+      213: -2615767852139902747
+    second: Parallax Stars 03_28
+  - first:
+      213: -8953960790466533663
+    second: Parallax Stars 03_29
+  - first:
+      213: -5019777643757808765
+    second: Parallax Stars 03_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Parallax Stars 03_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 674
+        height: 1600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c83bfb9d769a5f0800000000000000
+      internalID: -744950078431327198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_1
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 0
+        width: 630
+        height: 1600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c157c4fb6608c9f0800000000000000
+      internalID: -448101102185393726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_2
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1488
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8f614c6ac983d30800000000000000
+      internalID: 4411448075077744821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_3
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1290
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d3a69ab9b660ae0800000000000000
+      internalID: -1583459902667735709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1247
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1402b461521cfcec0800000000000000
+      internalID: -3544402016685318079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_5
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1217
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf272155e4651050800000000000000
+      internalID: 5770629433616969671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_6
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1197
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b14259470698a340800000000000000
+      internalID: 4875311554667626928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_7
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1149
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa13c1e2d8381330800000000000000
+      internalID: 3681755173757328115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_8
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1136
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5889478a80436e0f0800000000000000
+      internalID: -1088125048172799867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_9
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 973
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a395d8ae8927490800000000000000
+      internalID: -7749963875589997932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_10
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 986
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f66ee591b8374ae0800000000000000
+      internalID: -1565220010112162057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_11
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 955
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b04ff9b48b96ef50800000000000000
+      internalID: 6910381672605106361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_12
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 845
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8408b915c4e185df0800000000000000
+      internalID: -191369671027752888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 801
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f152802896f0bd9f0800000000000000
+      internalID: -442743192538307297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_14
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 788
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ced1459f7f671a80800000000000000
+      internalID: -8496199578255499576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_15
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 726
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca263f17bf9b0bcc0800000000000000
+      internalID: -3697250804471471444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_16
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 732
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f285f542958a9c90800000000000000
+      internalID: -7162265394093915407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_17
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 584
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b64c2ca560162d60800000000000000
+      internalID: 7864991828115474104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 528
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694706777812dc6a0800000000000000
+      internalID: -6427444227480718186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_19
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 516
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398c584a748674340800000000000000
+      internalID: 4847958180799826067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_20
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 304
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e017bccc656aa760800000000000000
+      internalID: 7469894449912811745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_21
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 225
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8fb3c5fcc5abb20800000000000000
+      internalID: 3150932934974503109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_22
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 214
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a308516626ba5600800000000000000
+      internalID: 457878588089697186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 168
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615a74efdb7b13ba0800000000000000
+      internalID: -6110901192722242282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_24
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 182
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69cf50c7efceb070800000000000000
+      internalID: 8124159372094851437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_25
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 135
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70c8fcb8ebce3020800000000000000
+      internalID: 2323518658233024635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_26
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 123
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c175777247d9450800000000000000
+      internalID: 6097157183384263814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_27
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 90
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c21fb6ad236f95a0800000000000000
+      internalID: -6512377488432229690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_28
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 91
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e880565ffce2bbd0800000000000000
+      internalID: -2615767852139902747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_29
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 63
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e66777e9142db380800000000000000
+      internalID: -8953960790466533663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Stars 03_30
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 38
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3835e5434da265ab0800000000000000
+      internalID: -5019777643757808765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Parallax Stars 03_0: -744950078431327198
+      Parallax Stars 03_1: -448101102185393726
+      Parallax Stars 03_10: -1565220010112162057
+      Parallax Stars 03_11: 6910381672605106361
+      Parallax Stars 03_12: -191369671027752888
+      Parallax Stars 03_13: -442743192538307297
+      Parallax Stars 03_14: -8496199578255499576
+      Parallax Stars 03_15: -3697250804471471444
+      Parallax Stars 03_16: -7162265394093915407
+      Parallax Stars 03_17: 7864991828115474104
+      Parallax Stars 03_18: -6427444227480718186
+      Parallax Stars 03_19: 4847958180799826067
+      Parallax Stars 03_2: 4411448075077744821
+      Parallax Stars 03_20: 7469894449912811745
+      Parallax Stars 03_21: 3150932934974503109
+      Parallax Stars 03_22: 457878588089697186
+      Parallax Stars 03_23: -6110901192722242282
+      Parallax Stars 03_24: 8124159372094851437
+      Parallax Stars 03_25: 2323518658233024635
+      Parallax Stars 03_26: 6097157183384263814
+      Parallax Stars 03_27: -6512377488432229690
+      Parallax Stars 03_28: -2615767852139902747
+      Parallax Stars 03_29: -8953960790466533663
+      Parallax Stars 03_3: -1583459902667735709
+      Parallax Stars 03_30: -5019777643757808765
+      Parallax Stars 03_4: -3544402016685318079
+      Parallax Stars 03_5: 5770629433616969671
+      Parallax Stars 03_6: 4875311554667626928
+      Parallax Stars 03_7: 3681755173757328115
+      Parallax Stars 03_8: -1088125048172799867
+      Parallax Stars 03_9: -7749963875589997932
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

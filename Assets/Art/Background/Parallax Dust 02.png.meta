@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: c22401303db118c44b7cdf52f392f208
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7995262916870851183
+    second: Parallax Dust 02_0
+  - first:
+      213: 4600826724774829973
+    second: Parallax Dust 02_1
+  - first:
+      213: -5932090364873206190
+    second: Parallax Dust 02_2
+  - first:
+      213: 1957203118374770804
+    second: Parallax Dust 02_3
+  - first:
+      213: 8012374569618169583
+    second: Parallax Dust 02_4
+  - first:
+      213: 1708345367780117821
+    second: Parallax Dust 02_5
+  - first:
+      213: 3519947081848456836
+    second: Parallax Dust 02_6
+  - first:
+      213: -3898856349362763938
+    second: Parallax Dust 02_7
+  - first:
+      213: -1587058539293490733
+    second: Parallax Dust 02_8
+  - first:
+      213: 7470775360780027754
+    second: Parallax Dust 02_9
+  - first:
+      213: 4858122225980837339
+    second: Parallax Dust 02_10
+  - first:
+      213: 3569536788634954289
+    second: Parallax Dust 02_11
+  - first:
+      213: 3899257696235906993
+    second: Parallax Dust 02_12
+  - first:
+      213: -3682873167274986873
+    second: Parallax Dust 02_13
+  - first:
+      213: 1130486684845712800
+    second: Parallax Dust 02_14
+  - first:
+      213: 308206953965181441
+    second: Parallax Dust 02_15
+  - first:
+      213: -141480682416281778
+    second: Parallax Dust 02_16
+  - first:
+      213: 8672375877631963417
+    second: Parallax Dust 02_17
+  - first:
+      213: -8006866995512344284
+    second: Parallax Dust 02_18
+  - first:
+      213: 9143997942636415892
+    second: Parallax Dust 02_19
+  - first:
+      213: -3192961926696024375
+    second: Parallax Dust 02_20
+  - first:
+      213: -1267414862332417562
+    second: Parallax Dust 02_21
+  - first:
+      213: 6148582072723698944
+    second: Parallax Dust 02_22
+  - first:
+      213: -8322171275841906843
+    second: Parallax Dust 02_23
+  - first:
+      213: -3262385960884883986
+    second: Parallax Dust 02_24
+  - first:
+      213: 6776134526877575696
+    second: Parallax Dust 02_25
+  - first:
+      213: -5924747446772002905
+    second: Parallax Dust 02_26
+  - first:
+      213: 7751710363002014784
+    second: Parallax Dust 02_27
+  - first:
+      213: -9222863953516930427
+    second: Parallax Dust 02_28
+  - first:
+      213: -3045293285172947433
+    second: Parallax Dust 02_29
+  - first:
+      213: 8067164607865011434
+    second: Parallax Dust 02_30
+  - first:
+      213: -6020477800011792981
+    second: Parallax Dust 02_31
+  - first:
+      213: -2728502570347636265
+    second: Parallax Dust 02_32
+  - first:
+      213: 383394442437742837
+    second: Parallax Dust 02_33
+  - first:
+      213: 7175224843595391247
+    second: Parallax Dust 02_34
+  - first:
+      213: -7054683880867472473
+    second: Parallax Dust 02_35
+  - first:
+      213: -781281095419598388
+    second: Parallax Dust 02_36
+  - first:
+      213: -320398730058544264
+    second: Parallax Dust 02_37
+  - first:
+      213: -8953686319300376968
+    second: Parallax Dust 02_38
+  - first:
+      213: 1574844562381026111
+    second: Parallax Dust 02_39
+  - first:
+      213: -1178655184167224126
+    second: Parallax Dust 02_40
+  - first:
+      213: 8466110296747386245
+    second: Parallax Dust 02_41
+  - first:
+      213: -2495814256394113151
+    second: Parallax Dust 02_42
+  - first:
+      213: -6555706606936688177
+    second: Parallax Dust 02_43
+  - first:
+      213: 51985087930919787
+    second: Parallax Dust 02_44
+  - first:
+      213: 8391146769129226624
+    second: Parallax Dust 02_45
+  - first:
+      213: -6979960359195323683
+    second: Parallax Dust 02_46
+  - first:
+      213: 4192134035383878672
+    second: Parallax Dust 02_47
+  - first:
+      213: 7360208510700719981
+    second: Parallax Dust 02_48
+  - first:
+      213: -6443739639611543449
+    second: Parallax Dust 02_49
+  - first:
+      213: 5065287417721008350
+    second: Parallax Dust 02_50
+  - first:
+      213: 142012439621629002
+    second: Parallax Dust 02_51
+  - first:
+      213: -1002732835494808500
+    second: Parallax Dust 02_52
+  - first:
+      213: -423528662740771227
+    second: Parallax Dust 02_53
+  - first:
+      213: -3653503338017042073
+    second: Parallax Dust 02_54
+  - first:
+      213: -4359581775587455628
+    second: Parallax Dust 02_55
+  - first:
+      213: 3985169907380694827
+    second: Parallax Dust 02_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Parallax Dust 02_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1413
+        width: 82
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ac0fd1341e4fe60800000000000000
+      internalID: 7995262916870851183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 612
+        width: 1091
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fd35ba78b69df30800000000000000
+      internalID: 4600826724774829973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_2
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1454
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25617322e3bfcada0800000000000000
+      internalID: -5932090364873206190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_3
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1401
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478d300ddd1692b10800000000000000
+      internalID: 1957203118374770804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_4
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1410
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feed67d383ca13f60800000000000000
+      internalID: 8012374569618169583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_5
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1396
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3dc7309f0345b710800000000000000
+      internalID: 1708345367780117821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_6
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1389
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48600c1b83d59d030800000000000000
+      internalID: 3519947081848456836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_7
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1388
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57c4f9aeca74e9c0800000000000000
+      internalID: -3898856349362763938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_8
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1280
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d149a7caa2a9f9e0800000000000000
+      internalID: -1587058539293490733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_9
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1209
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67c808db968da760800000000000000
+      internalID: 7470775360780027754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_10
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1287
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd8403dc648b6340800000000000000
+      internalID: 4858122225980837339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_11
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1283
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a664b0cca898130800000000000000
+      internalID: 3569536788634954289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_12
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1276
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b769df2732fc1630800000000000000
+      internalID: 3899257696235906993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_13
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1270
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782b1c7fd5ec3ecc0800000000000000
+      internalID: -3682873167274986873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_14
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1269
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5a98976ab40bf00800000000000000
+      internalID: 1130486684845712800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_15
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1272
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a56687798f64400800000000000000
+      internalID: 308206953965181441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_16
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1270
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e476ff5a11c590ef0800000000000000
+      internalID: -141480682416281778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1213
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9117be899e77a5870800000000000000
+      internalID: 8672375877631963417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_18
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1208
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42100b8c3e4e1e090800000000000000
+      internalID: -8006866995512344284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_19
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 1204
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b0fbd8ea106ee70800000000000000
+      internalID: 9143997942636415892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_20
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 1201
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6cfe17b0250b3d0800000000000000
+      internalID: -3192961926696024375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_21
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1198
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e920a3d5ec396ee0800000000000000
+      internalID: -1267414862332417562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_22
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1194
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005f70d81d6245550800000000000000
+      internalID: 6148582072723698944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_23
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 1203
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567db7f3155b18c80800000000000000
+      internalID: -8322171275841906843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_24
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1192
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed2c31e04da9b2d0800000000000000
+      internalID: -3262385960884883986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_25
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1190
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a2cc0637aa90e50800000000000000
+      internalID: 6776134526877575696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_26
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 960
+        width: 196
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af804b769117cda0800000000000000
+      internalID: -5924747446772002905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_27
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1182
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c037c318b939b60800000000000000
+      internalID: 7751710363002014784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_28
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1179
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a5ede591ec10080800000000000000
+      internalID: -9222863953516930427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 791
+        width: 116
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716526c44e1fcb5d0800000000000000
+      internalID: -3045293285172947433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_30
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 936
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecb56c187354ff60800000000000000
+      internalID: 8067164607865011434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_31
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 931
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badfb28b657f27ca0800000000000000
+      internalID: -6020477800011792981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_32
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 928
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d950b55e59622ad0800000000000000
+      internalID: -2728502570347636265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_33
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 908
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f05c5ec637125500800000000000000
+      internalID: 383394442437742837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_34
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 927
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01af02baf4839360800000000000000
+      internalID: 7175224843595391247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_35
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 867
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab583e336ab81e90800000000000000
+      internalID: -7054683880867472473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 928
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc969cdabf45825f0800000000000000
+      internalID: -781281095419598388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_37
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 921
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bcf547d07bd8bf0800000000000000
+      internalID: -320398730058544264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_38
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 915
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87683d33bbd1eb380800000000000000
+      internalID: -8953686319300376968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_39
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 912
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f333d2d19c8fad510800000000000000
+      internalID: 1574844562381026111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_40
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 910
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc3a03da5394afe0800000000000000
+      internalID: -1178655184167224126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_41
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 904
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585a7e2a57aad7570800000000000000
+      internalID: 8466110296747386245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_42
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 751
+        width: 106
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fe54e38261d5dd0800000000000000
+      internalID: -2495814256394113151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_43
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 855
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc97bd913937505a0800000000000000
+      internalID: -6555706606936688177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_44
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 855
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b6dbb7920b8b000800000000000000
+      internalID: 51985087930919787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_45
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 856
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0814d104787537470800000000000000
+      internalID: 8391146769129226624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 746
+        width: 79
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2dad3e803322f90800000000000000
+      internalID: -6979960359195323683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_47
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 744
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01481edb1b37d2a30800000000000000
+      internalID: 4192134035383878672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_48
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 800
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f8f19f4a6b42660800000000000000
+      internalID: 7360208510700719981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_49
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 424
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760b9db20fc3396a0800000000000000
+      internalID: -6443739639611543449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 5
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed03482c1148b4640800000000000000
+      internalID: 5065287417721008350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_51
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 189
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a447559bf8788f100800000000000000
+      internalID: 142012439621629002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_52
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 37
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4436bf7cc39512f0800000000000000
+      internalID: -1002732835494808500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_53
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 42
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ed329dce25f1af0800000000000000
+      internalID: -423528662740771227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_54
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 32
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7615ac732162c4dc0800000000000000
+      internalID: -3653503338017042073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_55
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 58
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47dc7d02977af73c0800000000000000
+      internalID: -4359581775587455628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parallax Dust 02_56
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 11
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fa00b9aea2e4730800000000000000
+      internalID: 3985169907380694827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Parallax Dust 02_0: 7995262916870851183
+      Parallax Dust 02_1: 4600826724774829973
+      Parallax Dust 02_10: 4858122225980837339
+      Parallax Dust 02_11: 3569536788634954289
+      Parallax Dust 02_12: 3899257696235906993
+      Parallax Dust 02_13: -3682873167274986873
+      Parallax Dust 02_14: 1130486684845712800
+      Parallax Dust 02_15: 308206953965181441
+      Parallax Dust 02_16: -141480682416281778
+      Parallax Dust 02_17: 8672375877631963417
+      Parallax Dust 02_18: -8006866995512344284
+      Parallax Dust 02_19: 9143997942636415892
+      Parallax Dust 02_2: -5932090364873206190
+      Parallax Dust 02_20: -3192961926696024375
+      Parallax Dust 02_21: -1267414862332417562
+      Parallax Dust 02_22: 6148582072723698944
+      Parallax Dust 02_23: -8322171275841906843
+      Parallax Dust 02_24: -3262385960884883986
+      Parallax Dust 02_25: 6776134526877575696
+      Parallax Dust 02_26: -5924747446772002905
+      Parallax Dust 02_27: 7751710363002014784
+      Parallax Dust 02_28: -9222863953516930427
+      Parallax Dust 02_29: -3045293285172947433
+      Parallax Dust 02_3: 1957203118374770804
+      Parallax Dust 02_30: 8067164607865011434
+      Parallax Dust 02_31: -6020477800011792981
+      Parallax Dust 02_32: -2728502570347636265
+      Parallax Dust 02_33: 383394442437742837
+      Parallax Dust 02_34: 7175224843595391247
+      Parallax Dust 02_35: -7054683880867472473
+      Parallax Dust 02_36: -781281095419598388
+      Parallax Dust 02_37: -320398730058544264
+      Parallax Dust 02_38: -8953686319300376968
+      Parallax Dust 02_39: 1574844562381026111
+      Parallax Dust 02_4: 8012374569618169583
+      Parallax Dust 02_40: -1178655184167224126
+      Parallax Dust 02_41: 8466110296747386245
+      Parallax Dust 02_42: -2495814256394113151
+      Parallax Dust 02_43: -6555706606936688177
+      Parallax Dust 02_44: 51985087930919787
+      Parallax Dust 02_45: 8391146769129226624
+      Parallax Dust 02_46: -6979960359195323683
+      Parallax Dust 02_47: 4192134035383878672
+      Parallax Dust 02_48: 7360208510700719981
+      Parallax Dust 02_49: -6443739639611543449
+      Parallax Dust 02_5: 1708345367780117821
+      Parallax Dust 02_50: 5065287417721008350
+      Parallax Dust 02_51: 142012439621629002
+      Parallax Dust 02_52: -1002732835494808500
+      Parallax Dust 02_53: -423528662740771227
+      Parallax Dust 02_54: -3653503338017042073
+      Parallax Dust 02_55: -4359581775587455628
+      Parallax Dust 02_56: 3985169907380694827
+      Parallax Dust 02_6: 3519947081848456836
+      Parallax Dust 02_7: -3898856349362763938
+      Parallax Dust 02_8: -1587058539293490733
+      Parallax Dust 02_9: 7470775360780027754
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
