@@ -433,7 +433,7 @@ MonoBehaviour:
   Health: 100
   moveSpeed: 3
   MaxHealth: 100
-  MaxSpeed: 5
+  MaxSpeed: 4
   healthBar: {fileID: 9097223052666638956}
 --- !u!114 &474421562786812353
 MonoBehaviour:

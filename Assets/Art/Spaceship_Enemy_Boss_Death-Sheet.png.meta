@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: 546534e0b8a9e514cb7102977d2fb4a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -75090895776766339
+    second: Spaceship_Enemy_Boss_Death-Sheet_0
+  - first:
+      213: -6337584328367780799
+    second: Spaceship_Enemy_Boss_Death-Sheet_1
+  - first:
+      213: 7532149694459858990
+    second: Spaceship_Enemy_Boss_Death-Sheet_2
+  - first:
+      213: 8813739382762129933
+    second: Spaceship_Enemy_Boss_Death-Sheet_3
+  - first:
+      213: -6715833854972901378
+    second: Spaceship_Enemy_Boss_Death-Sheet_4
+  - first:
+      213: -5279678171188991585
+    second: Spaceship_Enemy_Boss_Death-Sheet_5
+  - first:
+      213: 5891566544460748010
+    second: Spaceship_Enemy_Boss_Death-Sheet_6
+  - first:
+      213: -2124887731610557752
+    second: Spaceship_Enemy_Boss_Death-Sheet_7
+  - first:
+      213: 5682282258167137455
+    second: Spaceship_Enemy_Boss_Death-Sheet_8
+  - first:
+      213: 4283441021071047969
+    second: Spaceship_Enemy_Boss_Death-Sheet_9
+  - first:
+      213: 9147995647618840102
+    second: Spaceship_Enemy_Boss_Death-Sheet_10
+  - first:
+      213: 9110378128522711455
+    second: Spaceship_Enemy_Boss_Death-Sheet_11
+  - first:
+      213: -6301572835640582294
+    second: Spaceship_Enemy_Boss_Death-Sheet_12
+  - first:
+      213: 5427600906142283208
+    second: Spaceship_Enemy_Boss_Death-Sheet_13
+  - first:
+      213: -2452983858338584704
+    second: Spaceship_Enemy_Boss_Death-Sheet_14
+  - first:
+      213: -5949686129017333561
+    second: Spaceship_Enemy_Boss_Death-Sheet_15
+  - first:
+      213: -6943052990547213940
+    second: Spaceship_Enemy_Boss_Death-Sheet_16
+  - first:
+      213: -5178031779062620698
+    second: Spaceship_Enemy_Boss_Death-Sheet_17
+  - first:
+      213: 4941898091185794739
+    second: Spaceship_Enemy_Boss_Death-Sheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spaceship_Enemy_Boss_Death-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d762c576a3935fef0800000000000000
+      internalID: -75090895776766339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship_Enemy_Boss_Death-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c4e8d91a06c08a0800000000000000
+      internalID: -6337584328367780799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship_Enemy_Boss_Death-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20d8557d32978860800000000000000
+      internalID: 7532149694459858990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship_Enemy_Boss_Death-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a486c7541b05a70800000000000000
+      internalID: 8813739382762129933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship_Enemy_Boss_Death-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef74ccfd0b09cc2a0800000000000000
+      internalID: -6715833854972901378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e0fdc0876148e394f8e6cc947c935f6c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spaceship_Enemy_Boss_Death-Sheet_0: -75090895776766339
+      Spaceship_Enemy_Boss_Death-Sheet_1: -6337584328367780799
+      Spaceship_Enemy_Boss_Death-Sheet_2: 7532149694459858990
+      Spaceship_Enemy_Boss_Death-Sheet_3: 8813739382762129933
+      Spaceship_Enemy_Boss_Death-Sheet_4: -6715833854972901378
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

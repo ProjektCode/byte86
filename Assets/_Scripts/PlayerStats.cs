@@ -9,6 +9,8 @@ public class PlayerStats : Entity {
 
     public Bar healthBar;
 
+    private PlayerController playerController;
+
 
 
     protected override void Awake() {
@@ -19,6 +21,7 @@ public class PlayerStats : Entity {
 
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        playerController = GetComponent<PlayerController>();
 
         Debug.Log(gameObject.name + ": " + currentHealth + " | " + moveSpeed);
     }
@@ -29,6 +32,9 @@ public class PlayerStats : Entity {
     }
 
     public override void Die() {
+        playerController.isDead = true;
+        animator.SetBool("isDead", true);
+        GameManager.Instance.GameOver();
         base.Die();
     }
 

@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour {
 
     void Start() {
         shooter = GetComponent<EnemyShooting>();
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         mainCam = Camera.main;
     }
 

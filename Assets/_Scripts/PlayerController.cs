@@ -23,14 +23,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        //if(isDead) return;
+        if(isDead) return;
         // Handle input and animation in Update
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         stats.animator.SetBool("isBoosting", input != Vector2.zero);
     }
 
     void FixedUpdate() {
-        //if(isDead) return;
 
         // Move the player using Rigidbody2D
         Vector2 newPos = stats.rb.position + stats.moveSpeed * Time.fixedDeltaTime * input;
@@ -52,10 +51,5 @@ public class PlayerController : MonoBehaviour {
         Vector3 worldPos = mainCamera.ViewportToWorldPoint(viewPos);
         return (Vector2)worldPos;
     }
-
-    // protected override void Die() {
-    //     isDead = true;
-    //     base.Die();
-    // }
 
 }

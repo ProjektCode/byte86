@@ -34,6 +34,7 @@ public abstract class Entity : MonoBehaviour {
 
     public virtual void Die() {
         animator.SetBool("isDead", true);
+        //Destroy(gameObject);
         
     }
 

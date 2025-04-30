@@ -197,9 +197,8 @@ MonoBehaviour:
   Health: 10
   moveSpeed: 3
   MinHealth: 3
-  MaxHealth: 9
   MinSpeed: 1.4
-  MaxSpeed: 5
+  score: 20
   healthBar: {fileID: 1944138809439685932}
 --- !u!114 &7405964179353052694
 MonoBehaviour:
@@ -213,13 +212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2ed5038af104e459570a5e240d86aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
-  moveSpeed: 3
-  MinHealth: 3
-  MaxHealth: 9
-  MinSpeed: 1.5
-  MaxSpeed: 5
-  healthBar: {fileID: 1944138809439685932}
   shootRange: 8
 --- !u!114 &6880742009783057778
 MonoBehaviour:

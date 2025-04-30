@@ -8,6 +8,7 @@ public class WaveManager : MonoBehaviour {
     public float delayBetweenWaves = 3f;
 
     private int currentWaveIndex = 0;
+    private int currentWave = 1;
     private EnemySpawner spawner;
 
     void Start() {
@@ -23,6 +24,8 @@ public class WaveManager : MonoBehaviour {
             WaveConfig wave = waveConfigs[currentWaveIndex];
             yield return StartCoroutine(spawner.SpawnWave(wave));
 
+            GameManager.Instance.UpdateWave(currentWave);
+
             // Wait until all enemies are defeated
             yield return new WaitUntil(() => GameObject.FindGameObjectsWithTag("Enemy").Length == 0);
 
@@ -31,6 +34,16 @@ public class WaveManager : MonoBehaviour {
 
             // Cycle to next wave
             currentWaveIndex = (currentWaveIndex + 1) % waveConfigs.Length;
+            currentWave++;
         }
     }
+
+    public void ResetWaves() {
+        StopAllCoroutines();
+        currentWaveIndex = 0;
+        currentWave = 1;
+        StartCoroutine(SpawnWavesLoop());
+    }
+
+
 }
