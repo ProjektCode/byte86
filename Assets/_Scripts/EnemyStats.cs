@@ -2,32 +2,25 @@ using System;
 using UnityEngine;
 
 public class EnemyStats : Entity {
-    // Now has access to health, speed, TakeDamage, Die, etc.
-
-    [Header("Enemy Stats")]
-    public int MinHealth = 3;
-
-    public float MinSpeed = 1.5f;
     public int score = 10;
-
-    public Bar healthBar;
 
     [NonSerialized] public bool canMove = true;
 
     private new Collider2D collider2D;
+    private PowerupDropper powerupDropper;
 
     protected override void Awake() {
-        // Optional: Randomize stats
-        Health = UnityEngine.Random.Range(MinHealth, Health);
-        moveSpeed = UnityEngine.Random.Range(MinSpeed, moveSpeed);
-        currentHealth = Health;
-        healthBar.MaxValue = currentHealth;
+        currentHealth = MaxHealth;
+        healthBar.MaxValue = Mathf.RoundToInt(currentHealth);
 
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         collider2D = GetComponent<Collider2D>();
+        audioSource  = GetComponent<AudioSource>();
+        sr = GetComponent<SpriteRenderer>();
+        powerupDropper = GetComponent<PowerupDropper>();
 
-        Debug.Log(gameObject.name + ": " + currentHealth + " | " + moveSpeed);
+        if(sr != null) orgMat = sr.material;
     }
 
     protected override void OnDamageTaken() {
@@ -37,14 +30,15 @@ public class EnemyStats : Entity {
 
     public override void Die() {
         collider2D.enabled = false;
+        healthBar.enabled = false;
         GameManager.Instance.UpdateScore(score);
         canMove = false;
-        healthBar.enabled = false;
+        powerupDropper.TryDropPowerup();
         base.Die();
         
     }
 
-    public override void TakeDamage(int amount) {
+    public override void TakeDamage(float amount) {
         currentHealth -= amount;
         healthBar.Change(-amount);
         OnDamageTaken();

@@ -3,18 +3,32 @@ using UnityEngine;
 
 public class ShootingPoint : MonoBehaviour {
 
+    [Header("Settings")]
     public GameObject bulletPrefab;
     public Transform[] FirePoints;
-    public float fireRate = 0.3f;
 
-    public AudioSource fireSource;
-    public AudioClip[] fireSounds;
+    [Header("Stats")]
+    public float FireRate = 0.3f;
+    public float ShotDelay = 0.1f;
+
+    [Header("Scattershot")]
+    public bool scattershotActive = false;
+    public int scatterCount = 1; // Total bullets per fire point (1 = normal, 3 = scattershot)
+    public float scatterAngle = 15f; // degrees between each bullet in the spread
+
+
+    [Header("Sound Settings")]
+    public AudioClip shootSFX;
+    [Range(0.5f, 1.1f)] public float minPitch = 0.9f;
+    [Range(0.5f, 1.1f)] public float maxPitch = 1f;
 
     private float nextFire = 0f;
     private PlayerController playerController;
+    private AudioSource fireSource;
 
     void Awake() {
-     playerController = GetComponent<PlayerController>();   
+     playerController = GetComponent<PlayerController>();
+     fireSource = GetComponent<AudioSource>(); 
     }
 
     // Update is called once per frame
@@ -24,7 +38,7 @@ public class ShootingPoint : MonoBehaviour {
         if(Input.GetKey(KeyCode.Space) && Time.time >= nextFire){
 
             Shoot();
-            nextFire = Time.time + fireRate;
+            nextFire = Time.time + FireRate;
 
         }
         
@@ -37,20 +51,32 @@ public class ShootingPoint : MonoBehaviour {
     }
 
     IEnumerator ShootWithDelay(){
-
         foreach(Transform point in FirePoints){
-            Instantiate(bulletPrefab, point.position, Quaternion.identity);
-                    //Play shoot sound
-            if(fireSource != null && fireSounds.Length > 0){
-                
-                int rand = Random.Range(0, fireSounds.Length);
-                fireSource.PlayOneShot(fireSounds[rand]);
+            if (scattershotActive && scatterCount > 1) {
+                float startAngle = -scatterAngle * (scatterCount - 1) / 2f;
+                for (int i = 0; i < scatterCount; i++) {
+                    float angle = startAngle + i * scatterAngle;
+                    Quaternion rotation = Quaternion.Euler(0, 0, angle);
+                    Instantiate(bulletPrefab, point.position, rotation);
 
+                    if (fireSource != null) {
+                        fireSource.pitch = Random.Range(minPitch, maxPitch);
+                        fireSource.PlayOneShot(shootSFX);
+                    }
+                }
+            } else {
+                Instantiate(bulletPrefab, point.position, Quaternion.identity);
+
+                if (fireSource != null) {
+                    fireSource.pitch = Random.Range(minPitch, maxPitch);
+                    fireSource.PlayOneShot(shootSFX);
+                }
             }
-            yield return new WaitForSeconds(0.1f);
-        }
 
+            yield return new WaitForSeconds(ShotDelay);
+        }
     }
+
 
 
 }

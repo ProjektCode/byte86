@@ -1,10 +1,12 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
 
     public float speed = 10f;
-    public int damage = 1;
+    public float damage = 1;
     public Direction direction = Direction.Up;
     public Target target = Target.Enemy;
 
@@ -16,6 +18,29 @@ public class Bullet : MonoBehaviour {
     public enum Target{
         Player,
         Enemy
+    }
+
+    [NonSerialized] public static bool boostedActive = false;
+
+    private SpriteRenderer sr;
+    private Color orgColor;
+    private bool isBoosted = false;
+
+    private Coroutine FlashRoutine;
+
+    void Awake() {
+        sr = GetComponent<SpriteRenderer>();
+        orgColor = sr.color;
+    }
+
+    //Figure out why OnBecomeInvisible() doesn't work
+    void Start() {
+        Destroy(gameObject, 3f);
+
+        if(boostedActive){
+            isBoosted = true;
+            StartCoroutine(FlashRed());
+        }
     }
 
     // Update is called once per frame
@@ -36,6 +61,14 @@ public class Bullet : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D col) {
+
+        if(col.CompareTag("Bullet")){
+            Debug.Log("Bullet hit");
+            Destroy(col.gameObject);
+            Destroy(gameObject);
+            return;
+        }
+
         Entity entity = col.GetComponent<Entity>();
         
         switch(target){
@@ -55,6 +88,39 @@ public class Bullet : MonoBehaviour {
                 break;
         }
 
+    }
+
+    public void SetBoosted(bool boosted){
+        isBoosted = boosted;
+
+        if(isBoosted == true && FlashRoutine == null) FlashRoutine = StartCoroutine(FlashRed());
+
+    }
+
+    private IEnumerator FlashRed() {
+        float flashDuration = 0.2f;
+        Color flashColor = Color.red;
+
+        while (isBoosted) {
+            Debug.Log("Boosted Bullets");
+            // Fade to red
+            float t = 0f;
+            while (t < 1f) {
+                t += Time.deltaTime / flashDuration;
+                sr.color = Color.Lerp(orgColor, flashColor, t);
+                yield return null;
+            }
+
+            // Fade back to original
+            t = 0f;
+            while (t < 1f) {
+                t += Time.deltaTime / flashDuration;
+                sr.color = Color.Lerp(flashColor, orgColor, t);
+                yield return null;
+            }
+        }
+
+        sr.color = orgColor;
     }
 
     void OnBecameInvisible() => Destroy(gameObject); //Destroys bullet when out of camera view

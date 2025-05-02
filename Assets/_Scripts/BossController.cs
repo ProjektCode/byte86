@@ -15,14 +15,22 @@ public class BossController : MonoBehaviour {
     public float minX = -7f; // Left boundary
     public float maxX = 7f;  // Right boundary
 
+    [Header("Sound Settings")] 
+    public AudioClip shootSFX;
+    [Range(0.9f, 1.1f)] public float minPitch = 0.95f;
+    [Range(0.9f, 1.1f)] public float maxPitch = 1.05f;
+    
+
     private EnemyStats stats;
     private Vector3 centerPosition;
     private bool isInPosition = false;
     private bool canMoveSideToSide = false;
     private float moveStartTime;
+    private AudioSource audioSource;
 
     void Awake() {
         stats = GetComponent<EnemyStats>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start() {
@@ -99,6 +107,8 @@ public class BossController : MonoBehaviour {
     }
 
     private void Shoot(Transform shootPoint) {
+        audioSource.pitch = Random.Range(minPitch, maxPitch);
+        audioSource.PlayOneShot(shootSFX);
         Instantiate(projectilePrefab, shootPoint.position, shootPoint.rotation);
     }
 }

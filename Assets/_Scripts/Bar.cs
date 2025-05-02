@@ -7,7 +7,7 @@ public class Bar : MonoBehaviour {
     public float AnimationSpeed = 10f;
     public int MaxValue = 0;
     
-    private int Value = 0;
+    private float Value = 0;
 
     [SerializeField]
     private RectTransform TopBar;
@@ -37,13 +37,13 @@ public class Bar : MonoBehaviour {
     }
 
 
-    public void Change(int amount){
+    public void Change(float amount){
         Value = Mathf.Clamp(Value + amount, 0, MaxValue);
         if(AdjustBarWidth != null){
             StopCoroutine(AdjustBarWidth);
         }
-
-        AdjustBarWidth = StartCoroutine(AdjustWidth(amount));
+        int newAmount = Mathf.RoundToInt(amount);
+        AdjustBarWidth = StartCoroutine(AdjustWidth(newAmount));
 
     }
 

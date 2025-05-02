@@ -3,9 +3,9 @@ using UnityEngine;
 public class Chaser : MonoBehaviour {
 
     [Header("Chaser Stats")]
-    //public float approachSpeed = 2f;         // Slow downward approach speed
-    public float chaseSpeed = 5f;            // Speed once chasing
-    public float chaseTriggerDistance = 5f;  // Distance to trigger chase
+    public float chaseSpeed = 5f;
+    public float chaseTriggerDistance = 5f;
+    public int damage = 5;
 
     private Transform player;
     private bool isChasing = false;
@@ -13,8 +13,15 @@ public class Chaser : MonoBehaviour {
     private Vector3 chaseDirection;
     private EnemyStats stats;
 
+    private bool isOffScreen = false;
+    private float offScreenTimer = 0f;
+    private float offScreenLifetime = 2f;
+
+
     void Awake() {
         stats = GetComponent<EnemyStats>();
+        stats.audioSource = GetComponent<AudioSource>();
+        
     }
 
     private void Start() {
@@ -22,34 +29,36 @@ public class Chaser : MonoBehaviour {
         if (playerObj != null) {
             player = playerObj.transform;
         } else {
-            Debug.LogWarning("Player not found by ZigZagChaser.");
+            Debug.LogWarning("Player not found by Chaser.");
         }
     }
 
     private void Update() {
         if (player == null) return;
+        //if (!stats.canMove) return;
+
+        // Handle off-screen lifetime
+        if (isOffScreen) {
+            offScreenTimer += Time.deltaTime;
+            if (offScreenTimer >= offScreenLifetime) {
+                Destroy(gameObject);
+                return;
+            }
+        } else {
+            offScreenTimer = 0f;
+        }
 
         if (isChasing) {
             if (!hasLockedOn) {
-                // Lock-on direction
                 chaseDirection = (player.position - transform.position).normalized;
-
-                // Instantly rotate to face player based on sprite facing up
                 transform.rotation = Quaternion.FromToRotation(Vector3.up, chaseDirection);
-
                 hasLockedOn = true;
             }
-
-            // Move toward player
             transform.position += chaseSpeed * Time.deltaTime * chaseDirection;
         } else {
-            // Move straight downward
             transform.position += stats.moveSpeed * Time.deltaTime * Vector3.down;
-
-            // Face downward (180 degrees from up)
             transform.rotation = Quaternion.Euler(0f, 0f, 180f);
 
-            // Trigger chase if within range
             float distance = Vector3.Distance(transform.position, player.position);
             if (distance < chaseTriggerDistance) {
                 isChasing = true;
@@ -57,11 +66,14 @@ public class Chaser : MonoBehaviour {
         }
     }
 
-
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
-            other.GetComponent<PlayerStats>().TakeDamage(10);
-            Destroy(gameObject); // Or disable if pooling
+            other.GetComponent<PlayerStats>().TakeDamage(damage);
+            stats.Die();
+            //Destroy(gameObject);
         }
     }
+
+    private void OnBecameInvisible() => isOffScreen = true;
+    private void OnBecameVisible() => isOffScreen = false;
 }

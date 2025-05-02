@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
     private Camera mainCamera;
+    private int enemyIndex = 0;
 
     void Awake() {
         mainCamera = Camera.main;
@@ -15,15 +16,9 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
-    IEnumerator SpawnEnemies(WaveConfig config) {
-        for (int i = 0; i < config.enemiesToSpawn; i++) {
-            SpawnEnemy(config);
-            yield return new WaitForSeconds(config.spawnInterval);
-        }
-    }
-
     void SpawnEnemy(WaveConfig config) {
-        GameObject enemyPrefab = config.enemyPrefabs[Random.Range(0, config.enemyPrefabs.Length)];
+        // Use enemyIndex to spawn enemies in order
+        GameObject enemyPrefab = config.enemyPrefabs[enemyIndex];
 
         float camWidth = mainCamera.orthographicSize * mainCamera.aspect;
         float spawnX = Random.Range(-camWidth, camWidth);
@@ -33,7 +28,11 @@ public class EnemySpawner : MonoBehaviour {
         Quaternion rot = Quaternion.Euler(0, 0, 180);
         GameObject enemy = Instantiate(enemyPrefab, spawnPos, rot);
 
+        // Start coroutine to enable the collider once the enemy is on screen
         StartCoroutine(EnableColliderOnScreen(enemy));
+
+        // Increment the enemyIndex and wrap around if it exceeds the array length
+        enemyIndex = (enemyIndex + 1) % config.enemyPrefabs.Length;
     }
 
 

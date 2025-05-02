@@ -3,20 +3,21 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour {
     public GameObject bulletPrefab;
-    public Transform[] firePoint;
+    public Transform[] FirePoints;
     public float fireRate = 1.3f;
     public bool RotBullet = false;
 
-    public AudioSource fireSource;
-    public AudioClip[] fireSounds;
+    [Header("Sound Settings")]
+    public AudioClip shootSFX;
+    [Range(0.9f, 1.1f)] public float minPitch = 0.95f;
+    [Range(0.9f, 1.1f)] public float maxPitch = 1.05f;
 
     private float nextFireTime;
 
-    private Renderer enemyRenderer;
+    private AudioSource fireSource;
 
     void Awake() {
-        // In case the visual part is on a child (like a sprite)
-        enemyRenderer = GetComponentInChildren<Renderer>();
+        fireSource = GetComponent<AudioSource>();
     }
 
     public void TryShoot() {
@@ -32,14 +33,14 @@ public class EnemyShooting : MonoBehaviour {
     }
 
     IEnumerator ShootWithDelay() {
-        foreach (Transform point in firePoint) {
+        foreach (Transform point in FirePoints) {
             Quaternion rot = RotBullet ? Quaternion.Euler(0, 0, 180) : Quaternion.identity;
             Instantiate(bulletPrefab, point.position, rot);
 
             // Play shoot sound
-            if (fireSource != null && fireSounds.Length > 0) {
-                int rand = Random.Range(0, fireSounds.Length);
-                fireSource.PlayOneShot(fireSounds[rand]);
+            if (fireSource != null) {
+                fireSource.pitch = Random.Range(minPitch, maxPitch);
+                fireSource.PlayOneShot(shootSFX);
             }
 
             yield return new WaitForSeconds(0.1f);
