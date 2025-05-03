@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Damage Boost
   m_EditorClassIdentifier: 
   powerupName: Damage Boost
-  icon: {fileID: 0}
-  duration: 10
-  multiplier: 1.25
+  icon: {fileID: -8213617840761112463, guid: eae0483b6b8af6343b56076e57290f3d, type: 3}
+  duration: 8.05
+  PowerupType: 0
+  multiplier: 1.5

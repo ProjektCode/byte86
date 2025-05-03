@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
-
     public float speed = 10f;
     public float damage = 1;
-    public Direction direction = Direction.Up;
     public Target target = Target.Enemy;
 
-    public enum Direction{
-        Up,
-        Down
-    }
-
-    public enum Target{
+    public enum Target {
         Player,
         Enemy
     }
@@ -25,7 +18,6 @@ public class Bullet : MonoBehaviour {
     private SpriteRenderer sr;
     private Color orgColor;
     private bool isBoosted = false;
-
     private Coroutine FlashRoutine;
 
     void Awake() {
@@ -33,68 +25,46 @@ public class Bullet : MonoBehaviour {
         orgColor = sr.color;
     }
 
-    //Figure out why OnBecomeInvisible() doesn't work
     void Start() {
         Destroy(gameObject, 3f);
 
-        if(boostedActive){
-            isBoosted = true;
-            StartCoroutine(FlashRed());
+        // Only apply boosted effect for player bullets
+        if (target == Target.Enemy && boostedActive) {
+            SetBoosted(true);
         }
     }
 
-    // Update is called once per frame
     void Update() {
-        switch(direction){
-            case Direction.Up:
-                transform.position += speed * Time.deltaTime * Vector3.up; //Move upward
-                break;
-            case Direction.Down :
-                transform.position += speed * Time.deltaTime * Vector3.down; //Move upward
-                break;
-            default:
-                transform.position += speed * Time.deltaTime * Vector3.up; //Move upward
-                break;
+        MoveForward();
+    }
 
-        }
-
+    private void MoveForward() {
+        transform.position += speed * Time.deltaTime * transform.up;
     }
 
     void OnTriggerEnter2D(Collider2D col) {
-
-        if(col.CompareTag("Bullet")){
-            Debug.Log("Bullet hit");
+        if (col.CompareTag("Bullet")) {
             Destroy(col.gameObject);
             Destroy(gameObject);
             return;
         }
 
         Entity entity = col.GetComponent<Entity>();
-        
-        switch(target){
-            case Target.Player:
-                //Destroy bullet when it leaves screen or hits something
-                if(col.CompareTag("Player")){
-                    entity.TakeDamage(damage);
-                    Destroy(gameObject);
-                }
-                break;
-            case Target.Enemy:
-                //Destroy bullet when it leaves screen or hits something
-                if(col.CompareTag("Enemy")){
-                    entity.TakeDamage(damage);
-                    Destroy(gameObject);
-                }
-                break;
-        }
+        if (entity == null) return;
 
+        if ((target == Target.Player && col.CompareTag("Player")) ||
+            (target == Target.Enemy && col.CompareTag("Enemy"))) {
+            entity.TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 
-    public void SetBoosted(bool boosted){
+    public void SetBoosted(bool boosted) {
         isBoosted = boosted;
 
-        if(isBoosted == true && FlashRoutine == null) FlashRoutine = StartCoroutine(FlashRed());
-
+        if (isBoosted && FlashRoutine == null) {
+            FlashRoutine = StartCoroutine(FlashRed());
+        }
     }
 
     private IEnumerator FlashRed() {
@@ -102,7 +72,6 @@ public class Bullet : MonoBehaviour {
         Color flashColor = Color.red;
 
         while (isBoosted) {
-            Debug.Log("Boosted Bullets");
             // Fade to red
             float t = 0f;
             while (t < 1f) {
@@ -123,6 +92,5 @@ public class Bullet : MonoBehaviour {
         sr.color = orgColor;
     }
 
-    void OnBecameInvisible() => Destroy(gameObject); //Destroys bullet when out of camera view
-
+    void OnBecameInvisible() => Destroy(gameObject);
 }

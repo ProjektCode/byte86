@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Healing
   m_EditorClassIdentifier: 
   powerupName: Healing
-  icon: {fileID: 0}
-  duration: 10
+  icon: {fileID: -4456225766891094810, guid: 29a4be8cff9c0a748bfc578053deb9be, type: 3}
+  duration: 5
+  PowerupType: 1
   HealAmountPerSecond: 5
   TickDelay: 1

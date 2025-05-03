@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   powerupName: Shield
-  icon: {fileID: 0}
-  duration: 10
-  shieldTint: {r: 0, g: 1, b: 1, a: 1}
+  icon: {fileID: -6717884257390833292, guid: e0853cc40296ec145b6025e0dc3e5458, type: 3}
+  duration: 15
+  PowerupType: 1
   maxHits: 5
+  shieldTint: {r: 0, g: 1, b: 1, a: 1}

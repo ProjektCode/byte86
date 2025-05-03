@@ -31,7 +31,7 @@ public class DamageBoostPowerUp : PowerupData {
         if (bullet == null) return;
 
         bullet.damage = orgDmg;
-        Bullet.boostedActive = true;
+        Bullet.boostedActive = false;
         Debug.Log("Bullet's org damage: " + orgDmg + " - Bullet's Changed damage is now: " + bullet.damage);
 
     }

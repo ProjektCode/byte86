@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Rapid Fire
   m_EditorClassIdentifier: 
   powerupName: Rapid Fire
-  icon: {fileID: 0}
-  duration: 15
-  FireRateModifier: 0.15
+  icon: {fileID: 8938545521515212694, guid: d5ce154fc8ad83746a6bc2555ed451ad, type: 3}
+  duration: 7
+  PowerupType: 0
+  FireRateModifier: 1.75

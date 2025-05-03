@@ -2,7 +2,6 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Healing", menuName = "Byte86/Powerups/Healing")]
 public class HealingPowerup : PowerupData {
-    [Header("Healing Settings")]
     [SerializeField] private float HealAmountPerSecond = 5f; // Healing amount per second
     [SerializeField] private float TickDelay = 1f;
 

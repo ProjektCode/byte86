@@ -3,14 +3,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "RapidFire", menuName = "Byte86/Powerups/RapidFire")]
 public class RapidFirePowerup : PowerupData {
 
-    [Range(0.1f, 1f)]
-    public float FireRateModifier = 0.25f;
+    [Range(1f, 2f)]
+    public float FireRateModifier = 1.25f;
 
     private float orgFireRate;
     public override void Activate(GameObject player) {
-        orgFireRate = player.GetComponent<ShootingPoint>().FireRate;
-        player.GetComponent<ShootingPoint>().FireRate *= FireRateModifier;
-        Debug.Log("New fire rate is: " + player.GetComponent<ShootingPoint>().FireRate);
+        ShootingPoint shooter = player.GetComponent<ShootingPoint>();
+        orgFireRate = shooter.FireRate;
+
+        shooter.FireRate = Mathf.Max(orgFireRate / FireRateModifier, 0.05f);
+        Debug.Log("New fire rate is: " + shooter.FireRate);
     }
 
     public override void Deactivate(GameObject player) {

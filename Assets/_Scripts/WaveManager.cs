@@ -20,11 +20,11 @@ public class WaveManager : MonoBehaviour {
         yield return new WaitForSeconds(delayBeforeFirstWave);
 
         while (true) {
+            GameManager.Instance.UpdateWave(currentWave);
+
             // Spawn current wave
             WaveConfig wave = waveConfigs[currentWaveIndex];
             yield return StartCoroutine(spawner.SpawnWave(wave));
-
-            GameManager.Instance.UpdateWave(currentWave);
 
             // Wait until all enemies are defeated
             yield return new WaitUntil(() => GameObject.FindGameObjectsWithTag("Enemy").Length == 0);
@@ -35,6 +35,7 @@ public class WaveManager : MonoBehaviour {
             // Cycle to next wave
             currentWaveIndex = (currentWaveIndex + 1) % waveConfigs.Length;
             currentWave++;
+            
         }
     }
 

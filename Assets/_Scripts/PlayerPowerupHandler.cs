@@ -1,38 +1,59 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PlayerPowerupHandler : MonoBehaviour {
+    private List<PowerupInstance> offensivePowerups = new();
+    private List<PowerupInstance> supportPowerups = new();
 
-    private PowerupData activePowerup;
-    private Coroutine powerupRoutine;
+    private const int MaxPerCategory = 2;
 
     public void ApplyPowerup(PowerupData newPowerup) {
+        var list = newPowerup.PowerupType == PowerupData.PowerupCategory.Offensive ? offensivePowerups : supportPowerups;
 
-        if(activePowerup != null && activePowerup.name == newPowerup.name) return;
-
-        // Remove the old one if active
-        if (activePowerup != null) {
-            activePowerup.Deactivate(gameObject);
-
-            if (powerupRoutine != null)
-                StopCoroutine(powerupRoutine);
+        // If it's already active, refresh it
+        var existing = list.Find(p => p.data == newPowerup);
+        if (existing != null) {
+            StopCoroutine(existing.coroutine);
+            existing.coroutine = StartCoroutine(RemoveAfterDuration(newPowerup, list, list.IndexOf(existing)));
+            return;
         }
 
-        // Set and activate new powerup
-        activePowerup = newPowerup;
-        activePowerup.Activate(gameObject);
-        powerupRoutine = StartCoroutine(RemoveAfterDuration(activePowerup));
+        // Remove oldest if at max
+        if (list.Count >= MaxPerCategory) {
+            var oldest = list[0];
+            oldest.data.Deactivate(gameObject);
+            StopCoroutine(oldest.coroutine);
+            list.RemoveAt(0);
+
+            // Shift UI: Clear old slot 0
+            GameManager.Instance.ClearPowerupUI(oldest.data.PowerupType, 0);
+        }
+
+        // Add new powerup
+        newPowerup.Activate(gameObject);
+        var newInstance = new PowerupInstance {
+            data = newPowerup,
+            coroutine = StartCoroutine(RemoveAfterDuration(newPowerup, list, list.Count)) // New index is current count
+        };
+        list.Add(newInstance);
+
+        GameManager.Instance.UpdatePowerupUI(newPowerup, list.Count - 1); // 0 or 1
     }
 
-    private IEnumerator RemoveAfterDuration(PowerupData powerup) {
+    private IEnumerator RemoveAfterDuration(PowerupData powerup, List<PowerupInstance> list, int slotIndex) {
         yield return new WaitForSeconds(powerup.duration);
-
-        // Only deactivate if it hasn’t been replaced by another powerup
-        if (powerup == activePowerup) {
-            activePowerup.Deactivate(gameObject);
-            activePowerup = null;
+        var instance = list.Find(p => p.data == powerup);
+        if (instance != null) {
+            powerup.Deactivate(gameObject);
+            list.Remove(instance);
+            GameManager.Instance.ClearPowerupUI(powerup.PowerupType, slotIndex);
         }
-
     }
 
+    private class PowerupInstance {
+        public PowerupData data;
+        public Coroutine coroutine;
+    }
 }
+

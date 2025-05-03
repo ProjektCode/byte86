@@ -1,12 +1,17 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PowerupData", menuName = "Byte86/PowerupData")]
 public abstract class PowerupData : ScriptableObject {
     public string powerupName;
     public Sprite icon;
 
-    [Range(10f, 30f)]
+    [Range(5f, 30f)]
     public float duration = 10f;
+
+    public enum PowerupCategory {
+        Offensive,
+        Support
+    }
+    public PowerupCategory PowerupType = PowerupCategory.Offensive;
 
     public abstract void Activate(GameObject player);
     public abstract void Deactivate(GameObject player);

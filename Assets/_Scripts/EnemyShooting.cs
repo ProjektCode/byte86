@@ -5,7 +5,6 @@ public class EnemyShooting : MonoBehaviour {
     public GameObject bulletPrefab;
     public Transform[] FirePoints;
     public float fireRate = 1.3f;
-    public bool RotBullet = false;
 
     [Header("Sound Settings")]
     public AudioClip shootSFX;
@@ -34,7 +33,7 @@ public class EnemyShooting : MonoBehaviour {
 
     IEnumerator ShootWithDelay() {
         foreach (Transform point in FirePoints) {
-            Quaternion rot = RotBullet ? Quaternion.Euler(0, 0, 180) : Quaternion.identity;
+            Quaternion rot = transform.rotation;
             Instantiate(bulletPrefab, point.position, rot);
 
             // Play shoot sound

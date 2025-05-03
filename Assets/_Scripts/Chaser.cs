@@ -35,7 +35,7 @@ public class Chaser : MonoBehaviour {
 
     private void Update() {
         if (player == null) return;
-        //if (!stats.canMove) return;
+        if (!stats.canMove) return;
 
         // Handle off-screen lifetime
         if (isOffScreen) {

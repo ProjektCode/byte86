@@ -61,7 +61,7 @@ public abstract class Entity : MonoBehaviour {
         
     }
 
-    public void OnAnimationComplete(){
+    public virtual void OnAnimationComplete(){
         Destroy(gameObject);
     }
 

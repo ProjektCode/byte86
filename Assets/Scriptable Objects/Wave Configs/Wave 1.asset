@@ -16,5 +16,4 @@ MonoBehaviour:
   - {fileID: 6718552094000346507, guid: 0117f5c6df7422c469ee6bdc03a71db3, type: 3}
   - {fileID: 6718552094000346507, guid: 0117f5c6df7422c469ee6bdc03a71db3, type: 3}
   - {fileID: 6718552094000346507, guid: 0117f5c6df7422c469ee6bdc03a71db3, type: 3}
-  enemiesToSpawn: 5
-  spawnInterval: 1.5
+  spawnInterval: 1.2

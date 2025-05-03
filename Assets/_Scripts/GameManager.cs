@@ -1,7 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEngine.InputSystem; // To handle UI
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
@@ -13,6 +12,11 @@ public class GameManager : MonoBehaviour {
     [Header("UI")]
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI waveText;
+    public Image OffenceImageSlot1;
+    public Image OffenceImageSlot2;
+    public Image SupportImageSlot1;
+    public Image SupportImageSlot2;
+    [Space]
     public GameObject gameOverPanel;
 
 
@@ -52,12 +56,12 @@ public class GameManager : MonoBehaviour {
     // Update score and wave UI
     public void UpdateScore(int points) {
         score += points;
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = "SCORE: " + score.ToString();
     }
 
     public void UpdateWave(int wave) {
         waveNumber = wave;
-        waveText.text = "Wave: " + waveNumber.ToString();
+        waveText.text = "WAVE: " + waveNumber.ToString();
     }
 
     // Handle game over
@@ -95,9 +99,64 @@ public class GameManager : MonoBehaviour {
         Time.timeScale = 1f; // Resume time
     }
 
+    public void UpdatePowerupUI(PowerupData powerup, int slotIndex) {
+        if (powerup == null) return;
+
+        switch (powerup.PowerupType) {
+            case PowerupData.PowerupCategory.Offensive:
+                if (slotIndex == 0 && OffenceImageSlot1 != null) {
+                    OffenceImageSlot1.sprite = powerup.icon;
+                    OffenceImageSlot1.enabled = true;
+                } else if (slotIndex == 1 && OffenceImageSlot2 != null) {
+                    OffenceImageSlot2.sprite = powerup.icon;
+                    OffenceImageSlot2.enabled = true;
+                }
+                break;
+
+            case PowerupData.PowerupCategory.Support:
+                if (slotIndex == 0 && SupportImageSlot1 != null) {
+                    SupportImageSlot1.sprite = powerup.icon;
+                    SupportImageSlot1.enabled = true;
+                } else if (slotIndex == 1 && SupportImageSlot2 != null) {
+                    SupportImageSlot2.sprite = powerup.icon;
+                    SupportImageSlot2.enabled = true;
+                }
+                break;
+        }
+    }
+
+    public void ClearPowerupUI(PowerupData.PowerupCategory category, int slotIndex) {
+        switch (category) {
+            case PowerupData.PowerupCategory.Offensive:
+                if (slotIndex == 0 && OffenceImageSlot1 != null) {
+                    OffenceImageSlot1.sprite = null;
+                    OffenceImageSlot1.enabled = false;
+                } else if (slotIndex == 1 && OffenceImageSlot2 != null) {
+                    OffenceImageSlot2.sprite = null;
+                    OffenceImageSlot2.enabled = false;
+                }
+                break;
+
+            case PowerupData.PowerupCategory.Support:
+                if (slotIndex == 0 && SupportImageSlot1 != null) {
+                    SupportImageSlot1.sprite = null;
+                    SupportImageSlot1.enabled = false;
+                } else if (slotIndex == 1 && SupportImageSlot2 != null) {
+                    SupportImageSlot2.sprite = null;
+                    SupportImageSlot2.enabled = false;
+                }
+                break;
+        }
+    }
+
     private void UpdateUI() {
         scoreText.text = "SCORE: " + score.ToString();
         waveText.text = "WAVE: " + waveNumber.ToString();
+
+        OffenceImageSlot1.enabled = false;
+        OffenceImageSlot2.enabled = false;
+        SupportImageSlot1.enabled = false;
+        SupportImageSlot2.enabled = false;
     }
 
     public void QuitGame(){

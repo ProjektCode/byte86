@@ -10,30 +10,40 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     public IEnumerator SpawnWave(WaveConfig config) {
-        for (int i = 0; i < config.enemiesToSpawn; i++) {
+        enemyIndex = 0;
+        
+        for (int i = 0; i < config.enemyPrefabs.Length; i++) {
             SpawnEnemy(config);
             yield return new WaitForSeconds(config.spawnInterval);
         }
     }
 
     void SpawnEnemy(WaveConfig config) {
-        // Use enemyIndex to spawn enemies in order
         GameObject enemyPrefab = config.enemyPrefabs[enemyIndex];
 
         float camWidth = mainCamera.orthographicSize * mainCamera.aspect;
-        float spawnX = Random.Range(-camWidth, camWidth);
         float spawnY = mainCamera.transform.position.y + mainCamera.orthographicSize + 2f;
+
+        // Get half-width of the enemy sprite in world units
+        float halfWidth = 0f;
+        SpriteRenderer sr = enemyPrefab.GetComponentInChildren<SpriteRenderer>();
+        if (sr != null) {
+            halfWidth = sr.bounds.extents.x;
+        }
+
+        // Adjust X range so entire sprite stays in screen bounds
+        float spawnX = Random.Range(-camWidth + halfWidth, camWidth - halfWidth);
 
         Vector3 spawnPos = new(spawnX, spawnY, 0f);
         Quaternion rot = Quaternion.Euler(0, 0, 180);
         GameObject enemy = Instantiate(enemyPrefab, spawnPos, rot);
 
-        // Start coroutine to enable the collider once the enemy is on screen
         StartCoroutine(EnableColliderOnScreen(enemy));
 
-        // Increment the enemyIndex and wrap around if it exceeds the array length
+        // Cycle to next enemy in list
         enemyIndex = (enemyIndex + 1) % config.enemyPrefabs.Length;
     }
+
 
 
 

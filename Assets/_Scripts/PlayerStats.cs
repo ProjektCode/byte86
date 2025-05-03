@@ -15,6 +15,8 @@ public class PlayerStats : Entity {
     private Color orgColor;
 
     private Coroutine HealCoroutine;
+    private Coroutine flashCoroutine;
+
     private float healAmountPerSecond;
     private float healTimer;
     private float healTickDelay;
@@ -45,7 +47,7 @@ public class PlayerStats : Entity {
     public override void Die() {
         playerController.isDead = true;
         animator.SetBool("isDead", true);
-        GameManager.Instance.GameOver();
+        //GameManager.Instance.GameOver();
         base.Die();
     }
 
@@ -53,7 +55,7 @@ public class PlayerStats : Entity {
 
         if(isEvasionActive && Random.value < evasionChance) {
             //Add some visual effects for this
-
+            StartColorFlash(new Color(0.6f, 0f, 1f, 1f), 0.1f, false);
 
             return;
         }
@@ -75,6 +77,11 @@ public class PlayerStats : Entity {
         }
     }
 
+    public override void OnAnimationComplete() {
+        GameManager.Instance.GameOver();
+        base.OnAnimationComplete();
+    }
+
     // Call this from the powerup
     public void SetEvasionActive(bool active, float chance) {
         isEvasionActive = active;
@@ -91,43 +98,62 @@ public class PlayerStats : Entity {
     }
 
     public void StopHealing() {
-        StopCoroutine(HealCoroutine);
+        if (HealCoroutine != null) {
+            StopCoroutine(HealCoroutine);
+            HealCoroutine = null;
+        }
+
         isHealing = false;
-        FlashHealingEffect(false);
+
+        if (flashCoroutine != null) {
+            StopCoroutine(flashCoroutine);
+            flashCoroutine = null;
+        }
+
+        playerMat.color = orgColor; // ensure visual reset
     }
+
 
     private void FlashHealingEffect(bool startFlashing){
         if(startFlashing){
-            StartCoroutine(HealingFlash());
+            StartColorFlash(Color.green, healTickDelay / 2f, true);
         } else {playerMat.color = orgColor;}
     }
 
-    private IEnumerator HealingFlash(){
+    private void StartColorFlash(Color flashColor, float duration, bool loop = false)
+    {
+        // Stop any previous flash to avoid overlapping
+        if (flashCoroutine != null)
+            StopCoroutine(flashCoroutine);
 
-        Color flashColor = Color.green;
-        float duration = healTickDelay / 2;
+        flashCoroutine = StartCoroutine(ColorFlashCoroutine(flashColor, duration, loop));
+    }
 
-        while (isHealing) {
-            // Fade to green
+    private IEnumerator ColorFlashCoroutine(Color flashColor, float duration, bool loop)
+    {
+        do
+        {
             float t = 0f;
-            while (t < 1f) {
+            while (t < 1f)
+            {
                 t += Time.deltaTime / duration;
                 playerMat.color = Color.Lerp(orgColor, flashColor, t);
                 yield return null;
             }
 
-            // Fade back to original
             t = 0f;
-            while (t < 1f) {
+            while (t < 1f)
+            {
                 t += Time.deltaTime / duration;
                 playerMat.color = Color.Lerp(flashColor, orgColor, t);
                 yield return null;
             }
-        }
 
-        playerMat.color = orgColor; // Ensure it ends at the correct color
+        } while (loop);
 
+        playerMat.color = orgColor;
     }
+
 
     private IEnumerator HealOverTime() {
         float elapsedTime = 0f;

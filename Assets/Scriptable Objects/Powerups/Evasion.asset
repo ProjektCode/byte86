@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Evasion
   m_EditorClassIdentifier: 
   powerupName: Evasion
-  icon: {fileID: 0}
-  duration: 30
-  evadeChance: 1
+  icon: {fileID: 245940820880710147, guid: 7f15bb8c273d1334f8eff1a00082536d, type: 3}
+  duration: 10.05
+  PowerupType: 1
+  evadeChance: 0.35

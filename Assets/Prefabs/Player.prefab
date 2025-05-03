@@ -143,8 +143,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2546462079700288797}
   - {fileID: 481985754965995456}
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
-  moveSpeed: 3
+  moveSpeed: 5
   healthBar: {fileID: 6319586331208677882}
   DeathSFX: {fileID: 8300000, guid: e066482cde5f48b43b3678848bda686d, type: 3}
   DamageMaterial: {fileID: 2100000, guid: a3b99e8b6552b454bbf2f964a16aa357, type: 2}
@@ -348,7 +348,7 @@ MonoBehaviour:
   FirePoints:
   - {fileID: 3712354135713116725}
   - {fileID: 1328561890052511709}
-  FireRate: 0.3
+  FireRate: 0.35
   ShotDelay: 0.1
   scattershotActive: 0
   scatterCount: 1
@@ -477,6 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2f5072905dccf44b52a4ba60aa56c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashDuration: 0.1
 --- !u!1 &4354136641076276782
 GameObject:
   m_ObjectHideFlags: 0
