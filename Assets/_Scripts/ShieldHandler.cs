@@ -25,8 +25,7 @@ public class ShieldHandler : MonoBehaviour
         orgMat = sr.material;
     }
 
-    public void EnableShield(float duration, int maxHits, Color tint)
-    {
+    public void EnableShield(float duration, int maxHits, Color tint) {
         if (shieldRoutine != null)
             StopCoroutine(shieldRoutine);
 
@@ -36,8 +35,7 @@ public class ShieldHandler : MonoBehaviour
         shieldRoutine = StartCoroutine(ShieldDuration(duration));
     }
 
-    private IEnumerator ShieldDuration(float duration)
-    {
+    private IEnumerator ShieldDuration(float duration) {
         yield return new WaitForSeconds(duration);
         DisableShield(); // Ends due to duration
     }
@@ -54,21 +52,18 @@ public class ShieldHandler : MonoBehaviour
         }
     }
 
-    public void ForceDisableShield()
-    {
+    public void ForceDisableShield() {
         if (shieldRoutine != null)
             StopCoroutine(shieldRoutine);
         DisableShield();
     }
 
-    private void DisableShield()
-    {
+    private void DisableShield() {
         shieldActive = false;
         StartCoroutine(FadeToOriginal());
     }
 
-    private IEnumerator FadeToOriginal()
-    {
+    private IEnumerator FadeToOriginal() {
         float t = 0f;
         Color startColor = sr.color;
         while (t < 1f)
@@ -79,7 +74,7 @@ public class ShieldHandler : MonoBehaviour
         }
     }
 
-    private IEnumerator FlashShield(){
+    private IEnumerator FlashShield() {
 
         sr.material = flashMat;
         sr.material.SetColor("_TextColor", flashColor);

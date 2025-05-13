@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a374035f6386c484cb0b570a33fada2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 10
+  MaxHealth: 100
   moveSpeed: 2
   healthBar: {fileID: 1944138809439685932}
   DeathSFX: {fileID: 8300000, guid: 122a762654e58354191ead497617ee00, type: 3}

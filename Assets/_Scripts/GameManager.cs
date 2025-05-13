@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start() {
+        LockCursor();
         SpawnPlayer();
         UpdateUI();
     }
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour {
 
     // Handle game over
     public void GameOver() {
+        UnLockCursor();
         gameOverPanel.SetActive(true);
         Time.timeScale = 0f; // Stop the game (pause)
     }
@@ -92,6 +94,7 @@ public class GameManager : MonoBehaviour {
         WaveManager waveManager = FindFirstObjectByType<WaveManager>();
         if (waveManager != null) waveManager.ResetWaves();
 
+        LockCursor();
         score = 0; // Reset score
         waveNumber = 1; // Reset wave
         UpdateUI();
@@ -162,4 +165,15 @@ public class GameManager : MonoBehaviour {
     public void QuitGame(){
         Application.Quit();
     }
+
+    public void LockCursor(){
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void UnLockCursor(){
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    
 }

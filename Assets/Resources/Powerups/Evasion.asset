@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba223ecbba10186479ce58399a53c783, type: 3}
+  m_Name: Evasion
+  m_EditorClassIdentifier: 
+  PowerUpName: Evasion
+  PowerUpDescription: 35% Chance on hit to evade 100% of the damage for 10s
+  icon: {fileID: 245940820880710147, guid: 7f15bb8c273d1334f8eff1a00082536d, type: 3}
+  duration: 10.05
+  PowerupType: 1
+  evadeChance: 0.35
+  EvasionTint: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}

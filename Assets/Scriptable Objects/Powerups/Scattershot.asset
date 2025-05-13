@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afab0cbd83a8a8b4e961b4d3ee4c371f, type: 3}
   m_Name: Scattershot
   m_EditorClassIdentifier: 
-  powerupName: Scattershot
+  PowerUpName: Scattershot
   icon: {fileID: 9033822398592902954, guid: ad615d9c269dfd44e8f992ab84cd3b50, type: 3}
   duration: 8.05
   PowerupType: 0

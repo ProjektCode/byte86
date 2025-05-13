@@ -6,8 +6,10 @@ public class PowerUpPickup : MonoBehaviour {
 
     public PowerupData Powerup;
 
+    private Tween PulseTween;
+
     void Start() {
-        transform.DOScale(0.45f, 0.5f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
+        PulseTween = transform.DOScale(0.45f, 0.5f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
     }
 
     // Update is called once per frame
@@ -16,18 +18,21 @@ public class PowerUpPickup : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D col) {
+        if (col.CompareTag("Player")) {
+            if (col.TryGetComponent<PlayerPowerupHandler>(out var handler)) {
+                handler.ApplyPowerup(Powerup);
+            }
 
-        if(col.CompareTag("Player")) {
-            PlayerPowerupHandler handler = col.GetComponent<PlayerPowerupHandler>();
-
-            //if(handler != null && handler.CheckPowerUp(Powerup)) return;
-
-            handler.ApplyPowerup(Powerup);
-            Destroy(gameObject);
+            CleanupAndDestroy();
         }
     }
 
     void OnBecameInvisible() {
+        CleanupAndDestroy();
+    }
+
+    private void CleanupAndDestroy(){
+        PulseTween?.Kill();
         Destroy(gameObject);
     }
 

@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour {
 
         // Clamp to screen bounds (X: full width, Y: bottom half)
         viewPos.x = Mathf.Clamp(viewPos.x, 0f, 1f);
-        viewPos.y = Mathf.Clamp(viewPos.y, 0f, 0.5f);
+        viewPos.y = Mathf.Clamp(viewPos.y, 0f, 0.7f);
 
         Vector3 worldPos = mainCamera.ViewportToWorldPoint(viewPos);
         return (Vector2)worldPos;

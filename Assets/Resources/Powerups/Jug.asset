@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121825478542ce849b5a73b6611b33f7, type: 3}
+  m_Name: Jug
+  m_EditorClassIdentifier: 
+  PowerUpName: Jug
+  PowerUpDescription: Increase health by 50% and heal for 25% for 12s(the heal stays).
+  icon: {fileID: -3809741253021568641, guid: 913204b8ae60a574b84140dd08971648, type: 3}
+  duration: 12
+  PowerupType: 1
+  healPercent: 0.25
+  maxHealthBoostPercent: 0.5

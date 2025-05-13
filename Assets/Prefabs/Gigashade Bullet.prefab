@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1852340031935824437}
   - component: {fileID: 3564504343037162988}
   - component: {fileID: 4661639176941821675}
-  - component: {fileID: 7968742572340285}
+  - component: {fileID: 3492560091668470623}
   - component: {fileID: 4426935893432466941}
   m_Layer: 0
   m_Name: Gigashade Bullet
@@ -112,7 +112,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7968742572340285
+--- !u!114 &3492560091668470623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,13 +121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5778376362003640992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caabbd29248f317409d75de9dfac9176, type: 3}
+  m_Script: {fileID: 11500000, guid: 78bbd1955c771bc4a86dd78e43a8de53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
   damage: 5
-  direction: 1
-  target: 0
 --- !u!58 &4426935893432466941
 CircleCollider2D:
   m_ObjectHideFlags: 0

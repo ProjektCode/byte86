@@ -8,7 +8,7 @@ public class RapidFirePowerup : PowerupData {
 
     private float orgFireRate;
     public override void Activate(GameObject player) {
-        ShootingPoint shooter = player.GetComponent<ShootingPoint>();
+        PlayerShooting shooter = player.GetComponent<PlayerShooting>();
         orgFireRate = shooter.FireRate;
 
         shooter.FireRate = Mathf.Max(orgFireRate / FireRateModifier, 0.05f);
@@ -16,8 +16,8 @@ public class RapidFirePowerup : PowerupData {
     }
 
     public override void Deactivate(GameObject player) {
-        player.GetComponent<ShootingPoint>().FireRate = orgFireRate;
-        Debug.Log("old fire rate is: " + player.GetComponent<ShootingPoint>().FireRate);
+        player.GetComponent<PlayerShooting>().FireRate = orgFireRate;
+        Debug.Log("old fire rate is: " + player.GetComponent<PlayerShooting>().FireRate);
     }
 
     private void OnValidate() => FireRateModifier = Mathf.Round(FireRateModifier * 100f) / 100f;

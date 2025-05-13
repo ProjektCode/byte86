@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7151252397054735570}
   - component: {fileID: 3123507129637916683}
   - component: {fileID: 7064242661105876722}
-  - component: {fileID: 6502507935942830144}
+  - component: {fileID: 3783050562034687861}
   - component: {fileID: 4359250200559027237}
   m_Layer: 0
   m_Name: Bulkhead-9 Bullet
@@ -112,7 +112,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6502507935942830144
+--- !u!114 &3783050562034687861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,13 +121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8532792317756268432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caabbd29248f317409d75de9dfac9176, type: 3}
+  m_Script: {fileID: 11500000, guid: 78bbd1955c771bc4a86dd78e43a8de53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   damage: 1
-  direction: 1
-  target: 0
 --- !u!58 &4359250200559027237
 CircleCollider2D:
   m_ObjectHideFlags: 0

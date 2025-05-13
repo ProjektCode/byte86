@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0e91603ea4da6498461d30f39a031f, type: 3}
   m_Name: Damage Boost
   m_EditorClassIdentifier: 
-  powerupName: Damage Boost
+  PowerUpName: DamageBoost
   icon: {fileID: -8213617840761112463, guid: eae0483b6b8af6343b56076e57290f3d, type: 3}
   duration: 8.05
   PowerupType: 0

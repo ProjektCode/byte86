@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3495954610268537592}
   - component: {fileID: 5738611979717372771}
   - component: {fileID: 8885254320563223529}
-  - component: {fileID: 3347401000771664935}
+  - component: {fileID: 307690908117102587}
   - component: {fileID: 2168042277861993839}
   m_Layer: 0
   m_Name: PulseRig Bullet
@@ -112,7 +112,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3347401000771664935
+--- !u!114 &307690908117102587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,13 +121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1687156724798155692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caabbd29248f317409d75de9dfac9176, type: 3}
+  m_Script: {fileID: 11500000, guid: 78bbd1955c771bc4a86dd78e43a8de53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
   damage: 5
-  direction: 1
-  target: 0
 --- !u!58 &2168042277861993839
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class HealingPowerup : PowerupData {
         if (stats.isHealing) return; // Skip if healing is already active
 
         stats.StartHealing(HealAmountPerSecond, duration, TickDelay); // Start healing
+        
     }
 
     public override void Deactivate(GameObject player) {

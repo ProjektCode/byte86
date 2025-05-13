@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e17f9c5d12cbb4982a9b9e3f89a12f, type: 3}
+  m_Name: Healing
+  m_EditorClassIdentifier: 
+  PowerUpName: Healing
+  PowerUpDescription: Heal 5 health per second for 5s
+  icon: {fileID: -4456225766891094810, guid: 29a4be8cff9c0a748bfc578053deb9be, type: 3}
+  duration: 5
+  PowerupType: 1
+  HealAmountPerSecond: 5
+  TickDelay: 1

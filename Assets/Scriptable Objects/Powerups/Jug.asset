@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121825478542ce849b5a73b6611b33f7, type: 3}
   m_Name: Jug
   m_EditorClassIdentifier: 
-  powerupName: Jug
+  PowerUpName: Jug
   icon: {fileID: -3809741253021568641, guid: 913204b8ae60a574b84140dd08971648, type: 3}
   duration: 12
   PowerupType: 1

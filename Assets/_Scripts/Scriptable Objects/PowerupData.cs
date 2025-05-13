@@ -1,7 +1,8 @@
 using UnityEngine;
 
 public abstract class PowerupData : ScriptableObject {
-    public string powerupName;
+    public string PowerUpName;
+    public string PowerUpDescription;
     public Sprite icon;
 
     [Range(5f, 30f)]

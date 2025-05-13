@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbe569e108dc0f4ca2dbbbd6894c931, type: 3}
   m_Name: Rapid Fire
   m_EditorClassIdentifier: 
-  powerupName: Rapid Fire
+  PowerUpName: RapidFire
   icon: {fileID: 8938545521515212694, guid: d5ce154fc8ad83746a6bc2555ed451ad, type: 3}
   duration: 7
   PowerupType: 0

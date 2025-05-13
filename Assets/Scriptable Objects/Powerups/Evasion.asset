@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba223ecbba10186479ce58399a53c783, type: 3}
   m_Name: Evasion
   m_EditorClassIdentifier: 
-  powerupName: Evasion
+  PowerUpName: Evasion
   icon: {fileID: 245940820880710147, guid: 7f15bb8c273d1334f8eff1a00082536d, type: 3}
   duration: 10.05
   PowerupType: 1
   evadeChance: 0.35
+  EvasionTint: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}

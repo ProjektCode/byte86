@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a374035f6386c484cb0b570a33fada2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 3
+  MaxHealth: 30
   moveSpeed: 3
   healthBar: {fileID: 4510222055368810574}
   DeathSFX: {fileID: 8300000, guid: 122a762654e58354191ead497617ee00, type: 3}
@@ -540,7 +540,6 @@ MonoBehaviour:
   FirePoints:
   - {fileID: 4618144492100866689}
   fireRate: 1.3
-  RotBullet: 0
   shootSFX: {fileID: 8300000, guid: d19b212f2d00f06439ecff3f89fe277e, type: 3}
   minPitch: 0.95
   maxPitch: 1.05
@@ -671,6 +670,7 @@ MonoBehaviour:
   powerupPrefabs:
   - {fileID: 6204092166121425846, guid: 3bcc0573a6f6d304980f31386d9447f7, type: 3}
   - {fileID: 3021616302283306833, guid: b2724df08e5cfe24eba04d0859e39f4f, type: 3}
+  - {fileID: 8386502476515732687, guid: 865f6add0bfaa5544926fbd463498357, type: 3}
 --- !u!1 &8035940430644539393
 GameObject:
   m_ObjectHideFlags: 0

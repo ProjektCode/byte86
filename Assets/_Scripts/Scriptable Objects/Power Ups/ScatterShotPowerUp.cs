@@ -7,7 +7,7 @@ public class ScatterShotPowerUp : PowerupData {
     [SerializeField] private float spreadAngle = 15f;
 
     public override void Activate(GameObject player) {
-        ShootingPoint shooter = player.GetComponent<ShootingPoint>();
+        PlayerShooting shooter = player.GetComponent<PlayerShooting>();
         if (shooter != null) {
             shooter.scattershotActive = true;
             shooter.scatterCount = 1 + additionalProjectiles;
@@ -16,7 +16,7 @@ public class ScatterShotPowerUp : PowerupData {
     }
 
     public override void Deactivate(GameObject player) {
-        ShootingPoint shooter = player.GetComponent<ShootingPoint>();
+        PlayerShooting shooter = player.GetComponent<PlayerShooting>();
         if (shooter != null) {
             shooter.scattershotActive = false;
             shooter.scatterCount = 1;

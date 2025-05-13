@@ -1,7 +1,8 @@
 using System.Collections;
+using MoreMountains.Tools;
 using UnityEngine;
 
-public class ShootingPoint : MonoBehaviour {
+public class PlayerShooting : MonoBehaviour {
 
     [Header("Settings")]
     public GameObject bulletPrefab;
@@ -23,12 +24,23 @@ public class ShootingPoint : MonoBehaviour {
     [Range(0.5f, 1.1f)] public float maxPitch = 1f;
 
     private float nextFire = 0f;
+
     private PlayerController playerController;
     private AudioSource fireSource;
+    private PlayerStats stats;
+
+    private bool isPiercingActive = false;
+    private bool isExplosiveActive = false;
+    private bool isVampiricActive = false;
+    private float explosiveRadius = 0f;
+    private LayerMask enemyLayer;
+
+    private GameObject bullet;
 
     void Awake() {
      playerController = GetComponent<PlayerController>();
      fireSource = GetComponent<AudioSource>(); 
+     stats = GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -50,33 +62,46 @@ public class ShootingPoint : MonoBehaviour {
 
     }
 
-    IEnumerator ShootWithDelay(){
-        foreach(Transform point in FirePoints){
+    IEnumerator ShootWithDelay() {
+        foreach (Transform point in FirePoints) {
             if (scattershotActive && scatterCount > 1) {
                 float startAngle = -scatterAngle * (scatterCount - 1) / 2f;
                 for (int i = 0; i < scatterCount; i++) {
                     float angle = startAngle + i * scatterAngle;
                     Quaternion rotation = Quaternion.Euler(0, 0, angle);
-                    Instantiate(bulletPrefab, point.position, rotation);
-
-                    if (fireSource != null) {
-                        fireSource.pitch = Random.Range(minPitch, maxPitch);
-                        fireSource.PlayOneShot(shootSFX);
-                    }
+                 bullet = Instantiate(bulletPrefab, point.position, rotation);
                 }
             } else {
-                Instantiate(bulletPrefab, point.position, Quaternion.identity);
-
-                if (fireSource != null) {
-                    fireSource.pitch = Random.Range(minPitch, maxPitch);
-                    fireSource.PlayOneShot(shootSFX);
-                }
+              bullet = Instantiate(bulletPrefab, point.position, Quaternion.identity);
+            }
+             PlayerBullet p_bullet = bullet.GetComponent<PlayerBullet>();
+             p_bullet.SetPiercing(isPiercingActive);
+             p_bullet.SetExplosive(isExplosiveActive, explosiveRadius, enemyLayer);
+             p_bullet.SetVampiric(isVampiricActive);
+             p_bullet.GetStats(stats);
+            // ✅ Play sound once per fire point, regardless of scatter count
+            if (fireSource != null && shootSFX != null) {
+                fireSource.pitch = Random.Range(minPitch, maxPitch);
+                fireSource.PlayOneShot(shootSFX);
             }
 
             yield return new WaitForSeconds(ShotDelay);
         }
     }
 
+    public void SetExplosiveBulletsActive(bool active, float radius = 0f, LayerMask layer = default) {
+        isExplosiveActive = active;
+        explosiveRadius = radius;
+        enemyLayer = layer;
+    }
+
+    public void EnablePiercing(bool active){
+        isPiercingActive = active;
+    }
+
+    public void EnableVampiricRounds(bool active){
+        isVampiricActive = active;
+    }
 
 
 }

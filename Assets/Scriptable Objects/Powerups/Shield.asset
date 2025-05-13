@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd725a94793535b44b3c48287b057413, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  powerupName: Shield
+  PowerUpName: Shield
   icon: {fileID: -6717884257390833292, guid: e0853cc40296ec145b6025e0dc3e5458, type: 3}
   duration: 15
   PowerupType: 1

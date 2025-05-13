@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerStats : Entity {
 
     [Space]
-    public MMF_Player camShaker;
-
     private PlayerController playerController;
     private bool isEvasionActive = false;
     private float evasionChance = 0f;
@@ -20,6 +18,7 @@ public class PlayerStats : Entity {
     private float healAmountPerSecond;
     private float healTimer;
     private float healTickDelay;
+    private Color evasionColor;
 
     public bool isHealing{ get; set; }
 
@@ -39,7 +38,8 @@ public class PlayerStats : Entity {
     }
 
     new public void OnDamageTaken() {
-       camShaker.PlayFeedbacks();
+
+       FeedBackManager.Instance.CameraShake();
         base.OnDamageTaken();
         // Add enemy-specific reactions like flashing red or playing a sound
     }
@@ -54,8 +54,9 @@ public class PlayerStats : Entity {
     public override void TakeDamage(float amount) {
 
         if(isEvasionActive && Random.value < evasionChance) {
+            Debug.Log("Evasion Triggered");
             //Add some visual effects for this
-            StartColorFlash(new Color(0.6f, 0f, 1f, 1f), 0.1f, false);
+            StartColorFlash(evasionColor, 0.1f, false);
 
             return;
         }
@@ -83,9 +84,10 @@ public class PlayerStats : Entity {
     }
 
     // Call this from the powerup
-    public void SetEvasionActive(bool active, float chance) {
+    public void SetEvasionActive(bool active, float chance, Color eColor) {
         isEvasionActive = active;
         evasionChance = chance;
+        evasionColor = eColor;
     }
 
     public void StartHealing(float healAmount, float duration, float TickDelay) {
@@ -95,6 +97,7 @@ public class PlayerStats : Entity {
         HealCoroutine = StartCoroutine(HealOverTime());
         isHealing = true;
         FlashHealingEffect(true);
+        Debug.Log("Healing Activated");
     }
 
     public void StopHealing() {
@@ -111,6 +114,7 @@ public class PlayerStats : Entity {
         }
 
         playerMat.color = orgColor; // ensure visual reset
+        Debug.Log("Healing Deactivated");
     }
 
 
@@ -162,6 +166,7 @@ public class PlayerStats : Entity {
             if (GetCurrentHealth() < MaxHealth) {
                 float healAmount = Mathf.Min(healAmountPerSecond, MaxHealth - GetCurrentHealth());
                 Heal(healAmount);
+                Debug.Log("Healed for: " + healAmount);
             }
             elapsedTime += Time.deltaTime;
             yield return new WaitForSeconds(healTickDelay);
