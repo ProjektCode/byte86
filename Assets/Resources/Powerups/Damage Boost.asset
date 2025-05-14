@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Damage Boost
   m_EditorClassIdentifier: 
   PowerUpName: DamageBoost
-  PowerUpDescription: Increase damage by 50% for 8s
+  PowerUpDescription: Boosts base bullet damage by 50% for 8s
   icon: {fileID: -8213617840761112463, guid: eae0483b6b8af6343b56076e57290f3d, type: 3}
   duration: 8.05
   PowerupType: 0

@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   damage: 10
+  isCritical: 0
 --- !u!1 &4614695879201357153
 GameObject:
   m_ObjectHideFlags: 0

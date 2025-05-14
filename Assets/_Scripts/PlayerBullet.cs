@@ -4,16 +4,15 @@ using UnityEngine;
 public class PlayerBullet : Projectile {
 
     private float orgDamage = 10;
-    private float explosiveRadius;
 
     private Coroutine flashRoutine;
 
     private bool isBoosted = false;
     private bool isPiercing = false;
-    private bool isExplosive = false;
     private bool isVampiric = false;
+    public bool isCritical = false;
 
-    private LayerMask enemyLayer;
+    //private LayerMask enemyLayer;
 
     private PlayerStats playerStats;
 
@@ -26,16 +25,19 @@ public class PlayerBullet : Projectile {
 
     protected override void Start() {
         base.Start();
-        if (DamageBoostPowerUp.BoostedActive) {
-            SetBoosted(true);
-        }
-        if(VampiricRoundsPowerUp.VampiricRoundsActive){
-            SetVampiric(true);
-        }
+
+        if(DamageBoostPowerUp.Active) SetBoosted(true);
+        if(VampiricRoundsPowerUp.Active) SetVampiric(true);
+        if(PiercingBulletsPowerUp.Active) SetPiercing(true);
+        if(CriticalSurgePowerUp.Active) SetCritical(true);
     }
 
     public void SetVampiric(bool vampiric) {
         isVampiric = vampiric;
+    }
+
+    public void SetCritical(bool crit) {
+        isCritical = crit;
     }
 
     public void SetBoosted(bool boosted) {
@@ -50,14 +52,9 @@ public class PlayerBullet : Projectile {
         isPiercing = piercing;
     }
 
-    public void SetExplosive(bool value, float radius = 0f, LayerMask layer = default){
-        isExplosive = value;
-        explosiveRadius = radius;
-        enemyLayer = layer;
-    }
-
     // Override OnTriggerEnter2D from Projectile (copy base version but modify it slightly)
     protected override void OnTriggerEnter2D(Collider2D col) {
+
         if (col.CompareTag("Bullet")) {
             Destroy(col.gameObject);
             Destroy(gameObject);
@@ -67,31 +64,28 @@ public class PlayerBullet : Projectile {
         if (!col.CompareTag(TargetTag)) return;
 
         Entity entity = col.GetComponent<Entity>();
-        if (entity != null) entity.TakeDamage(damage);
+        float finalDamage = damage;
 
-        if(isVampiric) playerStats.Heal(damage / 2);
+        if(isBoosted){
+             finalDamage *= DamageBoostPowerUp.GetMultiplier; //All other damage-based powerups go below this
+             Debug.Log("Base Damage Boosted to: " + finalDamage);
+        }
 
-        if (isExplosive) Explode();
+        if (isVampiric) {
+            if (playerStats.GetCurrentHealth() == playerStats.MaxHealth) {
+                finalDamage *= 1.5f;
+                Debug.Log("[Player Bullet] Vampiric Bonus Damage: " + finalDamage);
+            } else { playerStats.Heal(damage / 2); }
+        }
 
-        if(isPiercing) return;
-
+        finalDamage = GetCriticalDamage(finalDamage);
+        if (entity != null) entity.TakeDamage(finalDamage);
+        Debug.Log("[Player Bullet] Damage Final dealt was: " + finalDamage);
+        
+        if (isPiercing) return;
         Destroy(gameObject);
     }
 
-    private void Explode() {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosiveRadius, enemyLayer);
-        foreach (Collider2D hit in hits) {
-            if (hit.TryGetComponent(out Entity e)) {
-
-                if(isVampiric) playerStats.Heal(damage / 2);
-
-                e.TakeDamage(damage);
-            }
-        }
-
-        // Add explosion VFX or SFX here
-        FeedBackManager.Instance.CameraShake(0.5f,0.1f, 50);
-    }
 
     private IEnumerator FlashRed() {
         float duration = 0.2f;
@@ -120,18 +114,19 @@ public class PlayerBullet : Projectile {
         playerStats = stats;
 
         if(playerStats == null){
-            Debug.Log("Player Stats was not found");
+            Debug.Log("[Player Bullet] Player Stats was not found");
         }
     }
 
     public float ReturnOrgDamage() => orgDamage;
 
-    private void OnDrawGizmosSelected() {
-        if (isExplosive) {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, explosiveRadius);
+    public float GetCriticalDamage(float baseDamage) {
+        if (isCritical && Random.value <= CriticalSurgePowerUp.GetChance) {
+            float critDamage = baseDamage * CriticalSurgePowerUp.GetMultiplier;
+            Debug.Log("[Player Bullet] Critical Hit! Damage: " + critDamage);
+            return critDamage;
         }
+        return baseDamage;
     }
-
     
 }

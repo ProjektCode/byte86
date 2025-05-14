@@ -1,5 +1,4 @@
 using System.Collections;
-using MoreMountains.Tools;
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour {
@@ -28,13 +27,6 @@ public class PlayerShooting : MonoBehaviour {
     private PlayerController playerController;
     private AudioSource fireSource;
     private PlayerStats stats;
-
-    private bool isPiercingActive = false;
-    private bool isExplosiveActive = false;
-    private bool isVampiricActive = false;
-    private float explosiveRadius = 0f;
-    private LayerMask enemyLayer;
-
     private GameObject bullet;
 
     void Awake() {
@@ -56,11 +48,7 @@ public class PlayerShooting : MonoBehaviour {
         
     }
 
-    void Shoot(){
-
-        StartCoroutine(ShootWithDelay());
-
-    }
+    void Shoot() => StartCoroutine(ShootWithDelay());
 
     IEnumerator ShootWithDelay() {
         foreach (Transform point in FirePoints) {
@@ -75,10 +63,8 @@ public class PlayerShooting : MonoBehaviour {
               bullet = Instantiate(bulletPrefab, point.position, Quaternion.identity);
             }
              PlayerBullet p_bullet = bullet.GetComponent<PlayerBullet>();
-             p_bullet.SetPiercing(isPiercingActive);
-             p_bullet.SetExplosive(isExplosiveActive, explosiveRadius, enemyLayer);
-             p_bullet.SetVampiric(isVampiricActive);
              p_bullet.GetStats(stats);
+
             // ✅ Play sound once per fire point, regardless of scatter count
             if (fireSource != null && shootSFX != null) {
                 fireSource.pitch = Random.Range(minPitch, maxPitch);
@@ -88,20 +74,5 @@ public class PlayerShooting : MonoBehaviour {
             yield return new WaitForSeconds(ShotDelay);
         }
     }
-
-    public void SetExplosiveBulletsActive(bool active, float radius = 0f, LayerMask layer = default) {
-        isExplosiveActive = active;
-        explosiveRadius = radius;
-        enemyLayer = layer;
-    }
-
-    public void EnablePiercing(bool active){
-        isPiercingActive = active;
-    }
-
-    public void EnableVampiricRounds(bool active){
-        isVampiricActive = active;
-    }
-
 
 }

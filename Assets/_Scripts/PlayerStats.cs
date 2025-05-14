@@ -53,7 +53,7 @@ public class PlayerStats : Entity {
 
     public override void TakeDamage(float amount) {
 
-        if(isEvasionActive && Random.value < evasionChance) {
+        if(isEvasionActive && Random.value <= evasionChance) {
             Debug.Log("Evasion Triggered");
             //Add some visual effects for this
             StartColorFlash(evasionColor, 0.1f, false);
