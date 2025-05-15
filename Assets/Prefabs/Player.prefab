@@ -285,6 +285,7 @@ MonoBehaviour:
   healthBar: {fileID: 6319586331208677882}
   DeathSFX: {fileID: 8300000, guid: e066482cde5f48b43b3678848bda686d, type: 3}
   DamageMaterial: {fileID: 2100000, guid: a3b99e8b6552b454bbf2f964a16aa357, type: 2}
+  CritDamageMaterial: {fileID: 2100000, guid: 52cf9e042fee1f746a7255e24c6ea0cb, type: 2}
   duration: 0.05
 --- !u!114 &857841083213118551
 MonoBehaviour:

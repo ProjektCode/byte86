@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
@@ -16,6 +15,7 @@ public abstract class Entity : MonoBehaviour {
 
     [Header("Damage Flash Settings")]
     public Material DamageMaterial;
+    public Material CritDamageMaterial;
     public float duration = 0.05f;
 
 
@@ -24,6 +24,7 @@ public abstract class Entity : MonoBehaviour {
     [NonSerialized] public AudioSource audioSource;
     [NonSerialized] public SpriteRenderer sr;
     [NonSerialized] public Material orgMat;
+    [NonSerialized] public bool isCrit = false;
 
     protected virtual void Awake() {
         sr = GetComponent<SpriteRenderer>();
@@ -33,8 +34,7 @@ public abstract class Entity : MonoBehaviour {
 
         currentHealth = MaxHealth;
 
-        if(sr != null) orgMat = sr.material;
-
+        if (sr != null) orgMat = sr.material;
     }
 
     public virtual void TakeDamage(float amount) {
@@ -48,17 +48,23 @@ public abstract class Entity : MonoBehaviour {
 
     protected virtual void OnDamageTaken() {
         // Play VFX, sound, flash sprite, etc.
-        StartCoroutine(DamageFlash());
+        if (isCrit) {
+            StartCoroutine(DamageFlash(CritDamageMaterial));
+            isCrit = false;
+        } else {
+            StartCoroutine(DamageFlash(DamageMaterial));
+        }
     }
 
     public virtual void Die() {
-        if(audioSource == null){
+        
+        if (audioSource == null) {
             Debug.Log("no audio source detected on: " + gameObject.name);
+            animator.SetBool("isDead", true);
             return;
         }
         audioSource.PlayOneShot(DeathSFX);
         animator.SetBool("isDead", true);
-        
     }
 
     public virtual void OnAnimationComplete(){
@@ -74,15 +80,12 @@ public abstract class Entity : MonoBehaviour {
         return currentHealth / MaxHealth;
     }
 
-    private IEnumerator DamageFlash(){
-        
+    private IEnumerator DamageFlash(Material mat){
+        if(sr == null || DamageMaterial == null || CritDamageMaterial == null) yield break;
 
-        if(sr == null || DamageMaterial == null) yield break;
-
-        sr.material = DamageMaterial;
+        sr.material = mat;
         yield return new WaitForSeconds(duration);
         sr.material = orgMat;
-
     }
 
     public float GetCurrentHealth() => currentHealth;

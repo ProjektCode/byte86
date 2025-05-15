@@ -25,6 +25,7 @@ public class PlayerStats : Entity {
     protected override void Awake() {
         currentHealth = MaxHealth;
         healthBar.MaxValue = Mathf.RoundToInt(currentHealth);
+        GameManager.Instance.UpdateHealth(currentHealth);
 
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -71,8 +72,10 @@ public class PlayerStats : Entity {
         currentHealth -= amount;
         healthBar.Change(-amount);
         OnDamageTaken();
+        GameManager.Instance.UpdateHealth(currentHealth);
 
-        if (currentHealth <= 0f) {
+        if (currentHealth <= 0f)
+        {
             Die();
             healthBar.Change(0);
         }
@@ -117,11 +120,18 @@ public class PlayerStats : Entity {
         Debug.Log("Healing Deactivated");
     }
 
+    public override void Heal(float amount) {
+        base.Heal(amount);
+        GameManager.Instance.UpdateHealth(currentHealth);
+    }
 
-    private void FlashHealingEffect(bool startFlashing){
-        if(startFlashing){
+    private void FlashHealingEffect(bool startFlashing)
+    {
+        if (startFlashing)
+        {
             StartColorFlash(Color.green, healTickDelay / 2f, true);
-        } else {playerMat.color = orgColor;}
+        }
+        else { playerMat.color = orgColor; }
     }
 
     private void StartColorFlash(Color flashColor, float duration, bool loop = false)

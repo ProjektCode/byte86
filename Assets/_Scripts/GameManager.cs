@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     [Header("UI")]
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI waveText;
+    public TextMeshProUGUI healthText;
     public Image OffenceImageSlot1;
     public Image OffenceImageSlot2;
     public Image SupportImageSlot1;
@@ -63,6 +64,12 @@ public class GameManager : MonoBehaviour {
     public void UpdateWave(int wave) {
         waveNumber = wave;
         waveText.text = "WAVE: " + waveNumber.ToString();
+    }
+
+    public void UpdateHealth(float health) {
+        int h = Mathf.RoundToInt(health);
+        if (h < 0) h = 0;
+        healthText.text = "HEALTH: " + h.ToString();
     }
 
     // Handle game over

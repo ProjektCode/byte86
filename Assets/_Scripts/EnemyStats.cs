@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class EnemyStats : Entity {
@@ -16,16 +17,15 @@ public class EnemyStats : Entity {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         collider2D = GetComponent<Collider2D>();
-        audioSource  = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
         powerupDropper = GetComponent<PowerupDropper>();
 
-        if(sr != null) orgMat = sr.material;
+        if (sr != null) orgMat = sr.material;
     }
 
     protected override void OnDamageTaken() {
         base.OnDamageTaken();
-        // Add enemy-specific reactions like flashing red or playing a sound
     }
 
     public override void Die() {
@@ -34,8 +34,8 @@ public class EnemyStats : Entity {
         GameManager.Instance.UpdateScore(score);
         canMove = false;
         powerupDropper.TryDropPowerup();
+        sr.color = Color.white;
         base.Die();
-        
     }
 
     public override void TakeDamage(float amount) {
@@ -48,4 +48,5 @@ public class EnemyStats : Entity {
             healthBar.Change(0);
         }
     }
+    
 }

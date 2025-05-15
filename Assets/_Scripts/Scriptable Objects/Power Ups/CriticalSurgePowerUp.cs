@@ -7,7 +7,7 @@ public class CriticalSurgePowerUp : PowerupData {
     [Range(1.5f, 2f)][SerializeField] private float multiplier = 1.5f;
     [Range(0.25f, 1f)][SerializeField] private float chance = 0.45f;
 
-    public static CriticalSurgePowerUp Instance { get; private set;}
+    public static CriticalSurgePowerUp Instance { get; private set; }
 
     private void OnEnable() {
         Instance = this;
@@ -25,5 +25,10 @@ public class CriticalSurgePowerUp : PowerupData {
 
     public static float GetMultiplier => Instance.multiplier;
     public static float GetChance => Instance.chance;
+
+    private void OnValidate() {
+        multiplier = Mathf.Round(multiplier * 100f) / 100f;
+        chance = Mathf.Round(chance * 100f) / 100f;
+    }
 
 }

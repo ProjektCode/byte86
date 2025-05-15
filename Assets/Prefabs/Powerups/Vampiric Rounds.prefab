@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7649617747283247850}
   - component: {fileID: 4009097510264306281}
   m_Layer: 0
-  m_Name: Explosive Bullets Power Up
+  m_Name: Vampiric Rounds
   m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d98d886f2d66024890c6155237e614e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Powerup: {fileID: 11400000, guid: 8a1076dceae797c4b84766061ced2c70, type: 2}
+  Powerup: {fileID: 11400000, guid: 59dca5e3553bffc49b8e160f0688e7f3, type: 2}
