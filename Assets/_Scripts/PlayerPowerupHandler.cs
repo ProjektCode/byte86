@@ -15,7 +15,11 @@ public class PlayerPowerupHandler : MonoBehaviour {
         var existing = list.Find(p => p.data == newPowerup);
         if (existing != null) {
             StopCoroutine(existing.coroutine);
-            existing.coroutine = StartCoroutine(RemoveAfterDuration(newPowerup, list, list.IndexOf(existing)));
+
+            float refreshDuration = newPowerup.GetDuration();
+            if (newPowerup.PowerupType == PowerupData.PowerupCategory.Offensive && PowerCoreSyncPowerUp.Active) refreshDuration *= PowerCoreSyncPowerUp.GetMultiplier;
+
+            existing.coroutine = StartCoroutine(RemoveAfterDuration(newPowerup, list, list.IndexOf(existing), refreshDuration));
             return;
         }
 
@@ -30,19 +34,24 @@ public class PlayerPowerupHandler : MonoBehaviour {
             GameManager.Instance.ClearPowerupUI(oldest.data.PowerupType, 0);
         }
 
+        // NEW: Adjust duration if PowerCoreSync is active
+        float finalDuration = newPowerup.GetDuration();
+        if (newPowerup.PowerupType == PowerupData.PowerupCategory.Offensive && PowerCoreSyncPowerUp.Active) finalDuration *= PowerCoreSyncPowerUp.GetMultiplier;
+
         // Add new powerup
         newPowerup.Activate(gameObject);
         var newInstance = new PowerupInstance {
             data = newPowerup,
-            coroutine = StartCoroutine(RemoveAfterDuration(newPowerup, list, list.Count)) // New index is current count
+            coroutine = StartCoroutine(RemoveAfterDuration(newPowerup, list, list.Count, finalDuration)) // New index is current count
         };
         list.Add(newInstance);
 
         GameManager.Instance.UpdatePowerupUI(newPowerup, list.Count - 1); // 0 or 1
+        Debug.Log("[Powerup Handler] Duration of: " + newPowerup.PowerUpName + " - is: " + finalDuration);
     }
 
-    private IEnumerator RemoveAfterDuration(PowerupData powerup, List<PowerupInstance> list, int slotIndex) {
-        yield return new WaitForSeconds(powerup.duration);
+    private IEnumerator RemoveAfterDuration(PowerupData powerup, List<PowerupInstance> list, int slotIndex, float duration) {
+        yield return new WaitForSeconds(duration);
         var instance = list.Find(p => p.data == powerup);
         if (instance != null) {
             powerup.Deactivate(gameObject);

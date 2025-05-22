@@ -5,8 +5,7 @@ public abstract class PowerupData : ScriptableObject {
     public string PowerUpDescription;
     public Sprite icon;
 
-    [Range(5f, 30f)]
-    public float duration = 10f;
+    [Range(5f, 30f)][SerializeField] protected float duration = 10f;
 
     public enum PowerupCategory {
         Offensive,
@@ -18,4 +17,6 @@ public abstract class PowerupData : ScriptableObject {
     public abstract void Deactivate(GameObject player);
 
     private void OnValidate() => duration = Mathf.Round(duration * 100f) / 100f;
+    
+    public virtual float GetDuration() => duration;
 }

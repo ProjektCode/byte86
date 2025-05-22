@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 
 public class EnemyStats : Entity {
@@ -11,6 +10,7 @@ public class EnemyStats : Entity {
     private PowerupDropper powerupDropper;
 
     protected override void Awake() {
+        canMove = true;
         currentHealth = MaxHealth;
         healthBar.MaxValue = Mathf.RoundToInt(currentHealth);
 
@@ -30,7 +30,7 @@ public class EnemyStats : Entity {
 
     public override void Die() {
         collider2D.enabled = false;
-        healthBar.enabled = false;
+        healthBar.gameObject.SetActive(false);
         GameManager.Instance.UpdateScore(score);
         canMove = false;
         powerupDropper.TryDropPowerup();
@@ -44,8 +44,8 @@ public class EnemyStats : Entity {
         OnDamageTaken();
 
         if (currentHealth <= 0f) {
-            Die();
             healthBar.Change(0);
+            Die();
         }
     }
     

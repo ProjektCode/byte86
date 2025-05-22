@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Critical Surge", menuName = "Byte86/Powerups/CriticalSurgePowerUp")]
@@ -9,9 +8,7 @@ public class CriticalSurgePowerUp : PowerupData {
 
     public static CriticalSurgePowerUp Instance { get; private set; }
 
-    private void OnEnable() {
-        Instance = this;
-    }
+    private void OnEnable() => Instance = this;
 
     public static bool Active { get; private set; }
     public override void Activate(GameObject player) {
@@ -19,9 +16,7 @@ public class CriticalSurgePowerUp : PowerupData {
         Active = true;
     }
 
-    public override void Deactivate(GameObject player) {
-        Active = false;
-    }
+    public override void Deactivate(GameObject player) => Active = false;
 
     public static float GetMultiplier => Instance.multiplier;
     public static float GetChance => Instance.chance;

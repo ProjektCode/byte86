@@ -11,7 +11,6 @@ public class EnemyMovement : MonoBehaviour {
 
     private bool isOnScreen = false;
     private bool reachedScreen = false;
-    private bool canMove = true;
     private EnemyStats stats;
     private float rotSpeed = 100;
 
@@ -26,7 +25,7 @@ public class EnemyMovement : MonoBehaviour {
     }
 
     void Update() {
-        if (!canMove || player == null) return;
+        if (!stats.canMove || player == null) return;
 
         CheckIfOnScreen();
 
@@ -60,6 +59,7 @@ public class EnemyMovement : MonoBehaviour {
     }
 
     void RotateTowardsPlayer() {
+        if (!stats.canMove) return;
         // Vector2 direction = player.position - transform.position;
         // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         // transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f); // assuming default enemy faces "up"
@@ -80,7 +80,6 @@ public class EnemyMovement : MonoBehaviour {
 
      void Die() {
         shooter.enabled = false;
-        canMove = false;
         stats.Die();
     }
 }
