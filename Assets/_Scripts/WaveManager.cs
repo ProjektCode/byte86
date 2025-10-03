@@ -11,6 +11,10 @@ public class WaveManager : MonoBehaviour {
     private int currentWave = 1;
     private EnemySpawner spawner;
 
+    private float difficultyMultiplier = 1f;
+
+    public float DifficultyMultiplier => difficultyMultiplier;
+
     void Start() {
         spawner = FindFirstObjectByType<EnemySpawner>();
         StartCoroutine(SpawnWavesLoop());
@@ -34,6 +38,10 @@ public class WaveManager : MonoBehaviour {
 
             // Cycle to next wave
             currentWaveIndex = (currentWaveIndex + 1) % waveConfigs.Length;
+            if (currentWaveIndex == 0) {
+                difficultyMultiplier += .25f;
+                Debug.Log("[Wave Manager] Difficulty Multiplier is: " + difficultyMultiplier);
+            }
             currentWave++;
             
         }

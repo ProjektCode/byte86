@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Piercing Bullets
   m_EditorClassIdentifier: 
   PowerUpName: PiercingBullets
+  PowerUpDescription: Replace bullets with piercing bullets for 10s
   icon: {fileID: 21300000, guid: 16a86a7f581fc4dfb953e0df8ad3ecac, type: 3}
   duration: 10
   PowerupType: 0

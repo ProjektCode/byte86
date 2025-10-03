@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI healthText;
+    public TextMeshProUGUI currencyText;
     public Image OffenceImageSlot1;
     public Image OffenceImageSlot2;
     public Image SupportImageSlot1;
@@ -162,11 +163,18 @@ public class GameManager : MonoBehaviour {
     private void UpdateUI() {
         scoreText.text = "SCORE: " + score.ToString();
         waveText.text = "WAVE: " + waveNumber.ToString();
+        //currencyText.text = "CURRENCY: " + CurrencyManager.Instance.GetCurrency();
 
         OffenceImageSlot1.enabled = false;
         OffenceImageSlot2.enabled = false;
         SupportImageSlot1.enabled = false;
         SupportImageSlot2.enabled = false;
+    }
+
+    public void UpdateCurrencyUI(int amount) {
+        if (currencyText != null) {
+            currencyText.text = "CURRENCY: " + amount.ToString();
+        }
     }
 
     public void QuitGame(){

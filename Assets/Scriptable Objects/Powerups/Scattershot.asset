@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Scattershot
   m_EditorClassIdentifier: 
   PowerUpName: Scattershot
+  PowerUpDescription: Fire 3 bullets in a cone for 8s
   icon: {fileID: 9033822398592902954, guid: ad615d9c269dfd44e8f992ab84cd3b50, type: 3}
   duration: 8.05
   PowerupType: 0

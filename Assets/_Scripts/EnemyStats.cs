@@ -35,6 +35,7 @@ public class EnemyStats : Entity {
         canMove = false;
         powerupDropper.TryDropPowerup();
         sr.color = Color.white;
+       // CurrencyManager.Instance.AddCurrency(score / 10);
         base.Die();
     }
 

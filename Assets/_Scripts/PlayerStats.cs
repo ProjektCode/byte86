@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using MoreMountains.Feedbacks;
 using UnityEngine;
@@ -38,6 +39,14 @@ public class PlayerStats : Entity {
         if(sr != null) orgMat = sr.material;
     }
 
+    void Start() {
+        PlayerUpgradeData upgrades = UpgradeManager.LoadUpgrades();
+        MaxHealth = Mathf.RoundToInt(MaxHealth + upgrades.GetHealthBonus());
+        currentHealth = MaxHealth;
+        healthBar.MaxValue = Convert.ToInt32(currentHealth);
+    }
+
+
     new public void OnDamageTaken() {
 
        FeedBackManager.Instance.CameraShake();
@@ -54,7 +63,7 @@ public class PlayerStats : Entity {
 
     public override void TakeDamage(float amount) {
 
-        if(isEvasionActive && Random.value <= evasionChance) {
+        if(isEvasionActive && UnityEngine.Random.value <= evasionChance) {
             Debug.Log("Evasion Triggered");
             //Add some visual effects for this
             StartColorFlash(evasionColor, 0.1f, false);

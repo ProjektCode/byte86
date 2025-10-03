@@ -19,6 +19,7 @@ public class PlayerBullet : Projectile {
 
     protected override void Awake() {
         orgDamage = damage;
+
         base.Awake();
     }
 
@@ -76,6 +77,10 @@ public class PlayerBullet : Projectile {
         }
 
         finalDamage = GetCriticalDamage(finalDamage);
+
+        PlayerUpgradeData upgrades = UpgradeManager.LoadUpgrades();
+        finalDamage *= upgrades.GetDamageMultiplier();
+
         if (entity != null) entity.TakeDamage(finalDamage);
         
         if (isPiercing) return;

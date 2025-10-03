@@ -1,0 +1,20 @@
+Powerup Ideas
+	OFFENCE:
+		- Chain Shot: On Hit, bullets arc to a nearby enemy for reduced damage
+		- Reactor Core: Slightly increases fire rate and damage the longer you hold fire(ramps over 2s)
+	SUPPORT:
+		- Deflective Core: 10% chance to reflect enemy bullets back toward them.
+
+Change the Drone to not drop powerups when they run into you
+Create Icon for Powerup
+	- Piercing Bullets
+	- Power Sync Core
+	- Vampiric Rounds
+	- Critical Surge
+Create prefabs for all new powerups
+X - Add Multiplier on waves so every 5 waves the multiplier increases increasing their health and damage.
+Upgrades - Figure out a simple upgrade system
+	- Maybe have the enemies drop currency on killed and use that currency for the upgrades
+Remake boss - Possibly into a bullet hell boss
+
+

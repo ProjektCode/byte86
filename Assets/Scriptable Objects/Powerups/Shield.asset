@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   PowerUpName: Shield
+  PowerUpDescription: Block the next 5 hits for 10s
   icon: {fileID: -6717884257390833292, guid: e0853cc40296ec145b6025e0dc3e5458, type: 3}
-  duration: 15
+  duration: 10
   PowerupType: 1
   maxHits: 5
   shieldTint: {r: 0, g: 1, b: 1, a: 1}

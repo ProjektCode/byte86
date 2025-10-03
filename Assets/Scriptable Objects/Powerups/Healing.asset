@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Healing
   m_EditorClassIdentifier: 
   PowerUpName: Healing
+  PowerUpDescription: Heal 5 health per second for 5s
   icon: {fileID: -4456225766891094810, guid: 29a4be8cff9c0a748bfc578053deb9be, type: 3}
   duration: 5
   PowerupType: 1
